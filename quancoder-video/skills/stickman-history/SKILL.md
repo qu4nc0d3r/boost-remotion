@@ -65,7 +65,7 @@ After TTS finishes, compare words/s per scene; an outlier (±15 %) means garbled
 python3 pipeline/build_story.py
 nohup bash pipeline/render.sh <slug> > out/render.log 2>&1 &
 ```
-`render.sh` uses `render.*`, `video.resolution`, `audio.limiter` and writes `out/master.mp4` then `out/<slug>-16x9.mp4` with channel metadata. ≈ 3.9 fps at 1080p on 2 cores (4 min ≈ 31 min + ≈ 5 min delivery encode; was 57 + 6 min before 0.3.0); `video.resolution: "720p"` ≈ 2.3× faster. Poll `tr '\r' '\n' < out/render.log | grep -v -i memory | tail -1` until `RENDER_DONE`.
+`render.sh` uses `render.*`, `video.resolution`, `audio.limiter` and writes `out/master.mp4` then `out/<slug>-16x9.mp4` with channel metadata. ≈ 3.9 fps at 1080p on 2 cores (4 min ≈ 31 min + ≈ 5 min delivery encode; was 57 + 6 min before 0.3.0); `video.resolution: "720p"` ≈ 2× faster. Poll `tr '\r' '\n' < out/render.log | grep -v -i memory | tail -1` until `RENDER_DONE`.
 
 ### 6. Verify
 Extract ~16 frames (`ffmpeg -ss <t> -i out/<slug>-16x9.mp4 -frames:v 1 -vf scale=640:-1 out/fr/tNNN.jpeg`), `python3 pipeline/sheet.py make out/fr /tmp/video.jpg 4`, Read it. `ffmpeg -i … -af volumedetect -f null -` → mean ≈ −18 dB.
