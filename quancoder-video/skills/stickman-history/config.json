@@ -68,6 +68,7 @@
     "concurrency": 2,
     "masterCrf": 18,
     "masterPreset": "ultrafast",
+    "everyNthFrame": 1,
     "deliveryCrf": 27,
     "x264Preset": "slow",
     "audioBitrate": "160k"
