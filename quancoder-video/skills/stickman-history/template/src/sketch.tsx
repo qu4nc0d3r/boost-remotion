@@ -94,13 +94,17 @@ export const DrawPath: React.FC<{d: string; p: number; stroke?: string; w?: numb
 	);
 };
 
-/** SVG filters: line boil (hand-drawn wobble that changes every 4 frames) and watercolor edge. */
+/** SVG filters: line boil (hand-drawn wobble that changes every 4 frames) and watercolor edge.
+ * Speed: sRGB skips Chrome's per-pixel linearRGB round trip (these filters only move pixels or blur single-colour shapes,
+ * so the look is unchanged); the boil noise is one seamless 200 px tile repeated with feTile instead of full-frame turbulence. */
 export const SketchDefs: React.FC<{id: string; frame: number}> = ({id, frame}) => {
 	const seed = Math.floor(frame / 4) % 7;
 	return (
 		<defs>
-			<filter id={`boil-${id}`} x="-5%" y="-5%" width="110%" height="110%">
-				<feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves={2} seed={seed} result="n" />
+			{/* fixed screen-space region (the boil group is untransformed) so the tile at 0,0 always lies inside it */}
+			<filter id={`boil-${id}`} filterUnits="userSpaceOnUse" x={-40} y={-40} width={2000} height={1160} colorInterpolationFilters="sRGB">
+				<feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves={2} seed={seed} stitchTiles="stitch" x={0} y={0} width={200} height={200} result="t" />
+				<feTile in="t" result="n" />
 				<feDisplacementMap in="SourceGraphic" in2="n" scale={BOIL} xChannelSelector="R" yChannelSelector="G" />
 			</filter>
 			<linearGradient id="hillshade" x1="0" y1="0" x2="0" y2="1">
@@ -112,10 +116,10 @@ export const SketchDefs: React.FC<{id: string; frame: number}> = ({id, frame}) =
 				<stop offset="0.5" stopColor="#ff8a2a" stopOpacity={0.18} />
 				<stop offset="1" stopColor="#ff8a2a" stopOpacity={0} />
 			</radialGradient>
-			<filter id={`soft-${id}`} x="-50%" y="-50%" width="200%" height="200%">
+			<filter id={`soft-${id}`} x="-50%" y="-50%" width="200%" height="200%" colorInterpolationFilters="sRGB">
 				<feGaussianBlur stdDeviation={18} />
 			</filter>
-			<filter id={`wash-${id}`} x="-5%" y="-5%" width="110%" height="110%">
+			<filter id={`wash-${id}`} x="-5%" y="-5%" width="110%" height="110%" colorInterpolationFilters="sRGB">
 				<feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves={3} seed={3} result="n" />
 				<feDisplacementMap in="SourceGraphic" in2="n" scale={14} xChannelSelector="R" yChannelSelector="G" />
 			</filter>

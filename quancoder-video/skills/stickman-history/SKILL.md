@@ -2,7 +2,7 @@
 name: stickman-history
 description: This skill should be used when the user runs '/stickman-history [chủ đề]' or '/quancoder-video:stickman-history …', or asks for a 'video lịch sử người que', 'kể chuyện lịch sử bằng người que', 'video người que chuyển động', 'video Remotion minh hoạ người que', a narrated 16:9 history story drawn with animated stick figures on old paper, or wants to change its channel names, voice, colours or render settings ('đổi tên kênh', 'sửa config stickman').
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
   author: "Quan"
 ---
 
@@ -65,7 +65,7 @@ After TTS finishes, compare words/s per scene; an outlier (±15 %) means garbled
 python3 pipeline/build_story.py
 nohup bash pipeline/render.sh <slug> > out/render.log 2>&1 &
 ```
-`render.sh` uses `render.*`, `video.resolution`, `audio.limiter` and writes `out/master.mp4` then `out/<slug>-16x9.mp4` with channel metadata. ≈ 3.6 fps on 2 cores (4 min ≈ 33 min + 1 min encode). Poll `tr '\r' '\n' < out/render.log | grep -v -i memory | tail -1` until `RENDER_DONE`.
+`render.sh` uses `render.*`, `video.resolution`, `audio.limiter` and writes `out/master.mp4` then `out/<slug>-16x9.mp4` with channel metadata. ≈ 3.5 fps at 1080p on 2 cores (4 min ≈ 35 min + 1 min encode); `video.resolution: "720p"` ≈ 2.3× faster. Poll `tr '\r' '\n' < out/render.log | grep -v -i memory | tail -1` until `RENDER_DONE`.
 
 ### 6. Verify
 Extract ~16 frames (`ffmpeg -ss <t> -i out/<slug>-16x9.mp4 -frames:v 1 -vf scale=640:-1 out/fr/tNNN.jpeg`), `python3 pipeline/sheet.py make out/fr /tmp/video.jpg 4`, Read it. `ffmpeg -i … -af volumedetect -f null -` → mean ≈ −18 dB.

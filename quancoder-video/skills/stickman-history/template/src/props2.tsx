@@ -28,7 +28,8 @@ export const Sky: React.FC<{kind: string; id: string; strength?: number}> = ({ki
 					<stop offset="1" stopColor={k.low} stopOpacity={0} />
 				</linearGradient>
 			</defs>
-			<rect x={-60} y={-60} width={2040} height={1000} fill={`url(#sky-${id})`} filter={`url(#wash-${id})`} />
+			{/* no wash filter here: on a vertical gradient whose edges are off-screen it changed pixels by ≤ 3/255 but cost ~40 ms/frame */}
+			<rect x={-60} y={-60} width={2040} height={1000} fill={`url(#sky-${id})`} />
 			{[0, 1, 2, 3, 4].map((i) => (
 				<ellipse
 					key={i}
