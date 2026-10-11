@@ -1,0 +1,247 @@
+{
+  "title": "Nếu ngày mai thế giới có thể tu tiên",
+  "voice": "Giọng Donghua",
+  "voiceRef": "voices/giong-donghua.wav",
+  "chapterWord": "CHƯƠNG",
+  "accentColor": "#b3261e",
+  "titleCard": {
+    "kicker": "NẾU NGÀY MAI",
+    "lines": [
+      "THẾ GIỚI",
+      "CÓ THỂ"
+    ],
+    "accent": "TU TIÊN"
+  },
+  "branding": {
+    "channel": "Thế Giới Donghua",
+    "sub": "TIKTOK · FB BAN CÔNG THỐ",
+    "tiktok": "Thế Giới Donghua",
+    "fanpage": "Ban Công Thố",
+    "endKicker": "CẢM ƠN BẠN ĐÃ XEM"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "label": "Mở đầu",
+      "text": "Hãy tưởng tượng. Sáng mai bạn thức dậy, mở cửa sổ, và hít vào một hơi thở. Nhưng lần này, không khí có gì đó khác lạ. Nó mát, nó ngọt, và nó chảy thẳng vào lồng ngực như một dòng suối ấm. Đó là linh khí. Và từ giây phút ấy, thế giới này đã có thể tu tiên.",
+      "queries": [
+        "Huangshan clouds",
+        "mountain sunrise fog"
+      ]
+    },
+    {
+      "id": "s02",
+      "label": "Ngày đầu tiên",
+      "text": "Ban đầu, chẳng ai hiểu chuyện gì đang xảy ra. Có người thấy đầu óc minh mẫn lạ thường. Có người ngồi thiền mười phút mà cảm giác như vừa ngủ tám tiếng. Mạng xã hội bùng nổ với hàng triệu video, ai cũng khoe rằng mình nhìn thấy những đốm sáng lơ lửng quanh người.",
+      "queries": [
+        "busy street Asia",
+        "crowd smartphones"
+      ]
+    },
+    {
+      "id": "s03",
+      "label": "Linh căn",
+      "text": "Rồi một sự thật tàn nhẫn lộ ra. Không phải ai cũng hấp thụ được linh khí như nhau. Người thì cảm nhận rõ như nắng chiếu lên da, người thì hoàn toàn không thấy gì. Thứ mà tiểu thuyết gọi là linh căn, giờ trở thành một cuộc xổ số di truyền, và nó chia đôi nhân loại chỉ sau một đêm.",
+      "queries": [
+        "DNA helix",
+        "crowd silhouette"
+      ]
+    },
+    {
+      "id": "s04",
+      "label": "Kiểm tra toàn dân",
+      "text": "Các chính phủ lập tức vào cuộc. Những trạm kiểm tra linh căn mọc lên khắp nơi, xếp hàng dài hơn cả mùa thi đại học. Kết quả được ghi vào căn cước. Một con số nhỏ bé bỗng quyết định bạn sẽ học trường nào, làm nghề gì, và thậm chí được sống bao lâu.",
+      "queries": [
+        "long queue",
+        "queue people waiting"
+      ]
+    },
+    {
+      "id": "s05",
+      "label": "Thị trường sụp đổ",
+      "text": "Thị trường tài chính rơi vào hỗn loạn. Cổ phiếu dược phẩm lao dốc, vì ai còn cần thuốc bổ khi có thể tự điều hòa kinh mạch. Trong khi đó, những vùng đất có núi non hiểm trở, rừng già nguyên sinh, bỗng tăng giá gấp trăm lần. Bất động sản không còn tính theo vị trí, mà tính theo nồng độ linh khí.",
+      "queries": [
+        "stock exchange",
+        "stock ticker"
+      ]
+    },
+    {
+      "id": "s06",
+      "label": "Linh thạch",
+      "text": "Rồi người ta phát hiện, một số loại đá quý tích tụ linh khí qua hàng triệu năm. Ngọc bích, thạch anh, những mạch khoáng sâu trong lòng núi. Chúng trở thành linh thạch, loại tiền tệ mới mà không ngân hàng trung ương nào in ra được. Vàng mất ngôi, và cơn sốt đào mỏ lớn nhất lịch sử bắt đầu.",
+      "queries": [
+        "jade stone",
+        "quartz crystal"
+      ]
+    },
+    {
+      "id": "s07",
+      "label": "Khoa học đối mặt",
+      "text": "Giới khoa học không đứng yên. Các phòng thí nghiệm lớn nhất thế giới đo đạc linh khí bằng mọi thiết bị có thể. Họ phát hiện nó phản ứng với ý thức con người, một điều đi ngược mọi định luật vật lý đã biết. Có nhà khoa học gọi đây là cuộc cách mạng lớn nhất kể từ Newton. Có người gọi nó là dấu chấm hết của khoa học.",
+      "queries": [
+        "CERN LHC",
+        "laboratory scientist"
+      ]
+    },
+    {
+      "id": "s08",
+      "label": "Tông môn hiện đại",
+      "text": "Các môn phái cũng ra đời, nhưng không nằm trên đỉnh núi mây mù như trong truyện. Chúng là những tập đoàn. Có trụ sở, có cổ đông, có hợp đồng lao động. Đệ tử ký cam kết mười năm để đổi lấy công pháp và tài nguyên. Nghe quen không? Nó giống hệt một công ty công nghệ, chỉ khác là sản phẩm của họ là sức mạnh.",
+      "queries": [
+        "skyscrapers night",
+        "Shaolin monks"
+      ]
+    },
+    {
+      "id": "s09",
+      "label": "Trường học",
+      "text": "Giáo dục thay đổi tận gốc. Môn toán, môn văn vẫn còn, nhưng buổi sáng bây giờ bắt đầu bằng hai tiếng tĩnh tọa. Thầy cô giỏi nhất không phải người thuộc nhiều kiến thức, mà là người giúp học trò đột phá cảnh giới. Và những đứa trẻ không có linh căn, lần đầu tiên, phải học cách chấp nhận rằng chúng khác biệt.",
+      "queries": [
+        "classroom students",
+        "meditation children"
+      ]
+    },
+    {
+      "id": "s10",
+      "label": "Y học và tuổi thọ",
+      "text": "Bệnh viện đông nghẹt, nhưng không phải vì bệnh tật. Người ta đến để hỏi, liệu tu luyện có chữa được ung thư không. Câu trả lời là có thể. Người tu luyện ở cảnh giới cao có thể sống hai trăm, ba trăm năm. Và đột nhiên, câu hỏi lớn nhất của nhân loại không còn là sống thế nào, mà là sống lâu như vậy để làm gì.",
+      "queries": [
+        "hospital corridor",
+        "tai chi park"
+      ]
+    },
+    {
+      "id": "s11",
+      "label": "Dân số và lương hưu",
+      "text": "Hãy nghĩ đến những hệ quả không ai tính trước. Nếu con người sống ba trăm năm, lương hưu sẽ trả thế nào? Hôn nhân kéo dài hai trăm năm có còn là lời thề trọn đời? Những vị lãnh đạo có bao giờ chịu nghỉ hưu? Một thế giới bất tử, hóa ra, lại cần những luật lệ hoàn toàn mới.",
+      "queries": [
+        "elderly couple",
+        "parliament chamber"
+      ]
+    },
+    {
+      "id": "s12",
+      "label": "Quân sự",
+      "text": "Và tất nhiên, quân đội. Một người tu luyện đến cảnh giới cao có thể mạnh ngang một tiểu đoàn. Các cường quốc âm thầm tuyển mộ, huấn luyện, và che giấu những chiến binh mới của mình. Hiệp ước kiểm soát vũ khí hạt nhân bỗng trở nên lỗi thời. Thế giới cần một hiệp ước mới, kiểm soát con người.",
+      "queries": [
+        "military parade",
+        "fighter jets"
+      ]
+    },
+    {
+      "id": "s13",
+      "label": "Bầu trời mới",
+      "text": "Rồi đến ngày người đầu tiên ngự kiếm phi hành trên bầu trời thành phố. Video ấy đạt một tỷ lượt xem trong một giờ. Các hãng hàng không lo sợ. Cục quản lý bay phải viết lại toàn bộ quy định. Bạn có cần bằng lái để bay không? Bay qua biên giới có cần hộ chiếu? Luật lệ chạy theo không kịp sức mạnh.",
+      "queries": [
+        "city aerial clouds",
+        "airplane clouds"
+      ]
+    },
+    {
+      "id": "s14",
+      "label": "Thiên nhiên lên ngôi",
+      "text": "Có một điều bất ngờ: linh khí dồi dào nhất ở những nơi thiên nhiên còn nguyên vẹn. Rừng già, thác nước, đỉnh núi tuyết. Nơi ô nhiễm, linh khí mỏng dần rồi biến mất. Lần đầu tiên trong lịch sử, bảo vệ môi trường không còn là khẩu hiệu, mà là chuyện sống còn của chính người tu luyện.",
+      "queries": [
+        "rainforest mist",
+        "waterfall forest"
+      ]
+    },
+    {
+      "id": "s15",
+      "label": "Thánh địa",
+      "text": "Những danh thắng như Trương Gia Giới, dãy Himalaya, hay vịnh Hạ Long bỗng trở thành thánh địa tu luyện. Hàng triệu người đổ về. Các quốc gia phải đóng cửa rừng quốc gia, bán vé theo giờ, thậm chí cho đấu giá quyền ngồi thiền dưới một thác nước cổ.",
+      "queries": [
+        "Zhangjiajie",
+        "Ha Long Bay"
+      ]
+    },
+    {
+      "id": "s16",
+      "label": "Bất bình đẳng",
+      "text": "Nhưng mặt tối cũng lộ ra rất nhanh. Người giàu mua đan dược, thuê thầy giỏi, sở hữu cả một ngọn núi. Người nghèo chỉ có thể tu luyện trong căn phòng chật hẹp giữa thành phố đầy khói bụi. Khoảng cách giàu nghèo không còn đo bằng tiền, mà đo bằng tuổi thọ và sức mạnh.",
+      "queries": [
+        "luxury villa",
+        "Hong Kong apartments"
+      ]
+    },
+    {
+      "id": "s17",
+      "label": "Tội phạm mới",
+      "text": "Tội phạm cũng tiến hóa. Kẻ trộm có thể xuyên tường. Kẻ lừa đảo bán công pháp giả trên mạng. Những băng nhóm săn lùng người có linh căn tốt để cướp tài nguyên. Cảnh sát buộc phải thành lập những đơn vị đặc biệt, gồm toàn những người tu luyện, để giữ trật tự cho một thế giới không còn bình thường.",
+      "queries": [
+        "police lights night",
+        "alley night"
+      ]
+    },
+    {
+      "id": "s18",
+      "label": "Thiên kiếp",
+      "text": "Và rồi, người đầu tiên chạm đến giới hạn. Bầu trời trên đầu anh ta tụ mây đen suốt ba ngày. Sấm sét giáng xuống liên tục như muốn xóa sổ một con người dám vượt qua phàm trần. Thế giới nín thở theo dõi qua màn hình. Anh ta sống sót. Và nhân loại hiểu rằng, con đường này có tận cùng, nhưng cũng đầy máu.",
+      "queries": [
+        "lightning storm",
+        "thunderstorm clouds"
+      ]
+    },
+    {
+      "id": "s19",
+      "label": "Tâm ma",
+      "text": "Nhưng kẻ thù đáng sợ nhất không đến từ bầu trời. Nó đến từ bên trong. Người xưa gọi là tâm ma. Ghen tị, tham lam, sợ hãi, tất cả đều bị linh khí khuếch đại. Người tu luyện nhanh nhất chưa chắc đi xa nhất. Người đi xa nhất, là người giữ được tâm mình tĩnh lặng giữa thế giới đang phát điên.",
+      "queries": [
+        "silhouette fog",
+        "meditation sunset"
+      ]
+    },
+    {
+      "id": "s20",
+      "label": "Triết học trở lại",
+      "text": "Và thế là triết học quay trở lại. Những cuốn sách của Lão Tử, Trang Tử, những bài giảng về thiền định, được in lại hàng trăm triệu bản. Người trẻ không còn hỏi cách kiếm tiền nhanh nhất, mà hỏi đạo là gì. Một thế giới hiện đại, bỗng quay lại tìm câu trả lời trong những trang sách hai ngàn năm tuổi.",
+      "queries": [
+        "ancient books",
+        "Taoist temple"
+      ]
+    },
+    {
+      "id": "s21",
+      "label": "Người bình thường",
+      "text": "Còn những người không có linh căn thì sao? Họ không biến mất. Họ trở thành kỹ sư chế tạo pháp khí, bác sĩ luyện đan, nhà văn ghi lại thời đại. Và có lẽ, chính họ mới là người nhắc nhở thế giới rằng giá trị của một con người không nằm ở việc bay được bao cao.",
+      "queries": [
+        "engineer workshop",
+        "blacksmith sparks"
+      ]
+    },
+    {
+      "id": "s22",
+      "label": "Mười năm sau",
+      "text": "Mười năm sau ngày linh khí trở lại, thế giới đã khác đến mức không nhận ra. Thành phố xanh hơn. Con người sống lâu hơn. Nhưng chiến tranh, bất công và lòng tham vẫn còn đó, chỉ là được khoác lên một hình dạng mới. Hóa ra, sức mạnh chưa bao giờ thay đổi bản chất con người. Nó chỉ phóng đại những gì vốn có.",
+      "queries": [
+        "vertical garden building",
+        "Gardens by the Bay"
+      ]
+    },
+    {
+      "id": "s23",
+      "label": "Câu hỏi cho bạn",
+      "text": "Vậy nếu sáng mai thế giới thật sự có thể tu tiên, bạn sẽ làm gì? Bạn sẽ bỏ việc, lên núi, tìm một thác nước để ngồi thiền? Hay bạn sẽ ở lại, dùng sức mạnh ấy để bảo vệ những người mình thương? Có lẽ câu trả lời của bạn, nói lên con người thật của bạn nhiều hơn bất kỳ linh căn nào.",
+      "queries": [
+        "mountain summit person",
+        "hiker clouds"
+      ]
+    },
+    {
+      "id": "s24",
+      "label": "Kết",
+      "text": "Vì suy cho cùng, tu tiên chưa bao giờ chỉ là chuyện bay lên trời hay sống ngàn năm. Đó là hành trình trở thành phiên bản tốt nhất của chính mình. Và hành trình ấy, bạn không cần đợi linh khí trở lại. Bạn có thể bắt đầu, ngay hôm nay. Nếu thấy hay, hãy để lại bình luận: bạn sẽ chọn con đường nào?",
+      "queries": [
+        "sunrise mountains",
+        "Milky Way mountains"
+      ]
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "label": "Theo dõi",
+      "text": "Video được thực hiện bởi kênh Thế Giới Donghua. Hãy theo dõi kênh trên TikTok, và ghé fanpage Ban Công Thố để xem thêm những câu chuyện mới nhé.",
+      "queries": []
+    }
+  ]
+}

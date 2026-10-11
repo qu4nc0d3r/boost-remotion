@@ -1,0 +1,151 @@
+{
+ "frame": 150,
+ "audioFrames": 150,
+ "items": [
+  {
+   "type": "hills",
+   "y": 640,
+   "h": 130,
+   "seed": 9
+  },
+  {
+   "type": "cloud",
+   "x": 1500,
+   "y": 170,
+   "scale": 1.2,
+   "drift": 0
+  },
+  {
+   "type": "stakes",
+   "x1": 820,
+   "x2": 1780,
+   "n": 18,
+   "base": 1010,
+   "h": 260
+  },
+  {
+   "type": "boat",
+   "variant": "han",
+   "scale": 0.85,
+   "facing": 1,
+   "path": [
+    [
+     0,
+     1120,
+     0
+    ],
+    [
+     0.3,
+     1120,
+     0
+    ]
+   ],
+   "stuck": 0.3,
+   "tilt": 14,
+   "crewPose": "panic"
+  },
+  {
+   "type": "boat",
+   "variant": "han",
+   "scale": 0.7,
+   "facing": 1,
+   "path": [
+    [
+     0,
+     1560,
+     0
+    ],
+    [
+     0.3,
+     1560,
+     0
+    ]
+   ],
+   "stuck": 0.3,
+   "tilt": -11,
+   "phase": 30
+  },
+  {
+   "type": "smoke",
+   "x": 1560,
+   "y": 620,
+   "scale": 1.2,
+   "at": 0
+  },
+  {
+   "type": "fire",
+   "x": 1560,
+   "y": 660,
+   "scale": 1.1,
+   "at": 0
+  },
+  {
+   "type": "water",
+   "level": [
+    [
+     0,
+     720
+    ],
+    [
+     0.6,
+     860
+    ]
+   ]
+  },
+  {
+   "type": "splash",
+   "x": 1200,
+   "y": 850,
+   "at": 0.95
+  },
+  {
+   "type": "bank",
+   "x1": -40,
+   "x2": 860,
+   "y": 800,
+   "side": "left",
+   "slope": 320
+  },
+  {
+   "type": "reeds",
+   "x1": -20,
+   "x2": 300,
+   "y": 830,
+   "n": 8,
+   "h": 150
+  },
+  {
+   "type": "crowd",
+   "n": 2,
+   "x": 90,
+   "y": 830,
+   "dx": 130,
+   "hat": "band",
+   "weapon": "bow",
+   "pose": "shoot",
+   "scale": 1.0
+  },
+  {
+   "type": "stick",
+   "x": 560,
+   "y": 830,
+   "hat": "general",
+   "weapon": "sword",
+   "pose": "point",
+   "scale": 1.45,
+   "mood": "shout"
+  },
+  {
+   "type": "volley",
+   "x1": 250,
+   "y1": 480,
+   "x2": 1250,
+   "y2": 620,
+   "n": 12,
+   "waves": 1,
+   "at": 0.78,
+   "arc": 160
+  }
+ ],
+ "sky": "dusk"
+}

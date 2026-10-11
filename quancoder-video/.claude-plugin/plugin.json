@@ -1,0 +1,26 @@
+{
+  "name": "quancoder-video",
+  "version": "1.3.0",
+  "description": "Quancoder video toolkit — narrated videos with VieNeu-TTS + Remotion: 9:16 torn-paper collage explainers (paper-tear-video), FOMO affiliate product videos (affiliate-video-01), 16:9 stick-figure history stories on old paper with a config file for channel/voice/style (stickman-history), upload metadata (video-meta) and a browser job-queue UI (init-ui).",
+  "author": {
+    "name": "Quan"
+  },
+  "keywords": [
+    "affiliate",
+    "history",
+    "lich-su",
+    "paper-tear",
+    "quancoder",
+    "reels",
+    "remotion",
+    "shopee",
+    "shorts",
+    "stickman",
+    "tiktok",
+    "tiktok-shop",
+    "tts",
+    "video",
+    "vieneu",
+    "youtube"
+  ]
+}

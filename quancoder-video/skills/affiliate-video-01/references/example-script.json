@@ -1,0 +1,97 @@
+{
+ "title": "Trà túi lọc lá mâm xôi",
+ "product": {
+  "name": "Trà Lá Mâm Xôi túi lọc 35 gói",
+  "url": "https://s.shopee.vn/5LCDETz2Iy",
+  "price": "94.400đ",
+  "oldPrice": "160.000đ",
+  "discount": "-41%",
+  "sold": "1k+",
+  "rating": 4.8,
+  "ratingCount": 80
+ },
+ "voice": "Giọng Donghua",
+ "voiceRef": "voices/giong-donghua.wav",
+ "voiceStyle": "hài hước",
+ "palette": {
+  "primary": "#1d5a37",
+  "dark": "#0f2e1c",
+  "accent": "#e0294a",
+  "highlight": "#ffd23f",
+  "light": "#fbf5e6"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "kind": "hook",
+   "text": "Uống nước lọc mãi, miệng nhạt như chưa từng được yêu?",
+   "image": "img/p03.jpg",
+   "top": "NƯỚC LỌC À?",
+   "big": "NHẠT NHƯ TÌNH CŨ"
+  },
+  {
+   "id": "s02",
+   "kind": "product",
+   "text": "Thôi, đổi gió với trà túi lọc lá mâm xôi này nè, một hộp ba mươi lăm túi.",
+   "image": "img/p02.jpg",
+   "bg": "img/p06c.jpg",
+   "tag": "ĐỔI GIÓ NÈ!",
+   "chip": "35 TÚI / HỘP"
+  },
+  {
+   "id": "s03",
+   "kind": "statement",
+   "text": "Vị ngọt thanh, nóng cũng ngon, nguội cũng ngon, dễ tính hơn người yêu cũ.",
+   "image": "img/p06c.jpg",
+   "big": "NÓNG CŨNG NGON\nNGUỘI CŨNG NGON",
+   "sub": "ngọt thanh, dễ uống"
+  },
+  {
+   "id": "s04",
+   "kind": "compare",
+   "text": "Một hộp thì uống thử, còn combo thì uống cả tháng khỏi lo.",
+   "left": "img/p02.jpg",
+   "right": "img/p01.jpg",
+   "leftLabel": "1 HỘP",
+   "rightLabel": "COMBO"
+  },
+  {
+   "id": "s05",
+   "kind": "proof",
+   "text": "Hơn một nghìn hộp đã bay màu, bốn chấm tám sao, có người mua đến lần thứ ba.",
+   "image": "img/p01.jpg",
+   "count": 1000,
+   "countLabel": "1.000+",
+   "countText": "HỘP ĐÃ BÁN",
+   "rating": 4.8,
+   "reviews": [
+    [
+     "Uống 2 hộp thấy ổn nên mua lần 3",
+     "aml***"
+    ],
+    [
+     "Dùng tốt, sẽ mua lại ủng hộ shop",
+     "478***"
+    ]
+   ]
+  },
+  {
+   "id": "s06",
+   "kind": "price",
+   "text": "Mà giá đang giảm bốn mốt phần trăm, chỉ còn chín mươi tư nghìn đồng một hộp.",
+   "image": "img/p03.jpg",
+   "old": "160.000đ",
+   "new": "94.400đ",
+   "badge": "-41%",
+   "note": "giá 1 hộp lúc làm video · xem giá mới nhất ở giỏ hàng"
+  },
+  {
+   "id": "s07",
+   "kind": "cta",
+   "text": "Bấm giỏ hàng góc dưới đi, trước khi nước lọc làm bạn buồn thêm.",
+   "image": "img/p06c.jpg",
+   "main": "BẤM GIỎ HÀNG",
+   "sub": "xem giá hôm nay"
+  }
+ ]
+}

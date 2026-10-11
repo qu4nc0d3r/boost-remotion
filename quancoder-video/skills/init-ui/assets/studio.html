@@ -1,0 +1,363 @@
+<title>Quancoder Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#121013;--panel:#1b181c;--panel-2:#231f24;--line:#322c33;--text:#f3ede3;--muted:#a39ba3;--faint:#6f6770;
+  --yellow:#ffd23f;--red:#e8334f;--ink:#120f0a;
+  --ok:#4cc38a;--run:#6cb2ff;--wait:#ffd23f;--bad:#ff6b7d;
+  --r:14px;
+  --font:"Be Vietnam Pro",system-ui,"Segoe UI",sans-serif;--mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{background:var(--bg)}
+body{color:var(--text);font:15px/1.5 var(--font);padding-inline:16px;padding-block:20px 48px}
+.wrap{max-width:1180px;margin:0 auto;display:grid;gap:22px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.brand{font-weight:800;font-size:clamp(24px,3.4vw,34px);letter-spacing:-.02em;line-height:1.1}
+.brand b{color:var(--yellow)}
+.brand small{display:block;font-size:13px;font-weight:500;letter-spacing:.02em;color:var(--muted);margin-top:4px}
+.conn{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--faint)}
+.dot.on{background:var(--ok)}
+.main{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px;align-items:start}
+@media (max-width:860px){.main{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:grid;gap:18px}
+h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:700}
+.seg{display:grid;grid-template-columns:1fr 1fr;background:var(--panel-2);border:1px solid var(--line);border-radius:12px;padding:4px;gap:4px}
+.seg button{all:unset;cursor:pointer;text-align:center;padding:12px 10px;border-radius:9px;font-weight:700;color:var(--muted);display:grid;gap:2px}
+.seg button span{font-size:12px;font-weight:500;color:var(--faint)}
+.seg button[aria-pressed="true"]{background:var(--yellow);color:var(--ink)}
+.seg button[aria-pressed="true"] span{color:#5c4a00}
+.seg button:focus-visible,.chip:focus-visible,.btn:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--yellow);outline-offset:2px}
+.field{display:grid;gap:8px}
+label,.lbl{font-weight:700;font-size:14px;display:flex;justify-content:space-between;gap:10px}
+label em,.lbl em{font-style:normal;font-weight:500;color:var(--muted);font-size:13px}
+input[type=url],input[type=text],select,textarea{width:100%;background:var(--panel-2);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:12px 14px;font:inherit}
+textarea{min-height:70px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--faint)}
+.err{color:var(--bad);font-size:13px;min-height:1em}
+.range{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center}
+input[type=range]{width:100%;accent-color:var(--yellow)}
+.val{font:500 20px var(--mono);color:var(--yellow);font-variant-numeric:tabular-nums;min-width:4.5ch;text-align:right}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{all:unset;cursor:pointer;border:1px solid var(--line);background:var(--panel-2);border-radius:999px;padding:8px 14px;font-weight:700;font-size:14px}
+.chip small{font-weight:500;color:var(--faint);margin-left:6px}
+.chip[aria-pressed="true"]{border-color:var(--yellow);background:#2b2512;color:var(--yellow)}
+.chip[aria-pressed="true"] small{color:#c9a93a}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:520px){.two{grid-template-columns:1fr}}
+.cmd{background:#0c0a0d;border:1px dashed var(--line);border-radius:10px;padding:12px 14px;font:500 13px/1.6 var(--mono);color:#d9d2c6;overflow-x:auto;white-space:pre}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn{all:unset;cursor:pointer;border-radius:10px;padding:12px 18px;font-weight:800;display:inline-flex;align-items:center;gap:8px}
+.btn.primary{background:var(--red);color:#fff;box-shadow:0 4px 0 #8e1a2c}
+.btn.primary:active{transform:translateY(2px);box-shadow:0 2px 0 #8e1a2c}
+.btn.ghost{border:1px solid var(--line);color:var(--text)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.toast{font-size:14px;color:var(--ok);min-height:1.2em}
+/* preview phone */
+.side{display:grid;gap:14px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px)}
+@media (max-width:860px){.side{position:static}}
+.phone{width:100%;max-width:300px;aspect-ratio:9/16;margin:0 auto;border-radius:26px;border:6px solid #2a262b;background:linear-gradient(180deg,#26402f,#0f2e1c);position:relative;overflow:hidden}
+.phone .prog{position:absolute;top:0;left:0;height:5px;width:38%;background:var(--yellow)}
+.phone .top{position:absolute;top:18%;left:50%;transform:translateX(-50%) rotate(-4deg);background:#fff;color:#0f2e1c;font-weight:800;font-size:15px;padding:6px 14px;border-radius:8px;white-space:nowrap}
+.phone .big{position:absolute;top:28%;left:8%;right:8%;text-align:center;color:var(--yellow);font-weight:800;font-size:30px;line-height:1.05;-webkit-text-stroke:5px #0b1f13;paint-order:stroke fill;white-space:pre-line}
+.phone .cap{position:absolute;top:68%;left:8%;right:18%;text-align:center;font-weight:800;font-size:15px;text-transform:uppercase;-webkit-text-stroke:3px #0b1f13;paint-order:stroke fill}
+.phone .cap i{font-style:normal;color:var(--yellow)}
+.phone .zone{position:absolute;background:rgba(232,51,79,.14)}
+.phone .z1{right:0;top:35%;width:14%;height:50%}.phone .z2{left:0;right:0;bottom:0;height:16%}
+.phone.paper{background:#e9e1d0}
+.phone.paper .big{color:#1b1b1b;-webkit-text-stroke:0;font-family:Georgia,"Times New Roman",serif;font-size:26px}
+.phone.paper .top{background:#1b1b1b;color:#f4efe4}
+.phone.paper .cap{color:#1b1b1b;-webkit-text-stroke:0;background:#fffdf6;padding:6px;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,.2);text-transform:none;font-size:13px}
+.phone .big,.phone .top{animation:bob var(--spd,1.2s) ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateX(0) rotate(calc(var(--tilt,3deg)*-1))}to{transform:translateX(0) rotate(var(--tilt,3deg)) scale(1.03)}}
+.phone .top{animation-name:bob2}
+@keyframes bob2{from{transform:translateX(-50%) rotate(-4deg)}to{transform:translateX(-50%) rotate(calc(-4deg + var(--tilt,3deg))) scale(1.03)}}
+@media (prefers-reduced-motion:reduce){.phone .big,.phone .top{animation:none}}
+.specs{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:13px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.specs dt{color:var(--muted)}.specs dd{margin:0;font:500 13px var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+/* queue */
+.queue{display:grid;gap:10px}
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.count{font:500 13px var(--mono);color:var(--muted)}
+.job{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 14px;align-items:start;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--st,var(--faint));border-radius:12px;padding:14px 16px}
+.job.example{opacity:.7;border-style:dashed}
+.kind{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:6px;background:var(--panel-2);color:var(--muted);white-space:nowrap}
+.jt{font-weight:700;overflow-wrap:anywhere}
+.jm{color:var(--muted);font-size:13px}
+.jr{font-size:13px;color:var(--text);grid-column:2/-1;overflow-wrap:anywhere}
+.pill{font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;white-space:nowrap;color:var(--ink);background:var(--st,var(--faint))}
+.st-pending{--st:var(--wait)}.st-running{--st:var(--run)}.st-done{--st:var(--ok)}.st-error{--st:var(--bad)}
+.jact{grid-column:2/-1;display:flex;gap:8px;flex-wrap:wrap}
+.link{all:unset;cursor:pointer;font-size:13px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.link:hover{color:var(--text)}
+.howto{font-size:14px;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.howto b{color:var(--text)}
+.howto code{font:500 13px var(--mono);color:var(--yellow)}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">Quancoder <b>Studio</b><small>Soạn yêu cầu video 9:16, gửi vào hàng chờ, rồi gõ “chạy” trong chat</small></div>
+    <div class="conn"><span class="dot" id="dbdot"></span><span id="dbtext">Đang kết nối hàng chờ…</span></div>
+  </header>
+
+  <div class="main">
+    <form class="panel" id="form" novalidate>
+      <div class="seg" role="group" aria-label="Loại video">
+        <button type="button" id="k-aff" aria-pressed="true" data-kind="affiliate">Affiliate FOMO<span>link sản phẩm → video bán hàng</span></button>
+        <button type="button" id="k-pt" aria-pressed="false" data-kind="paper-tear">Paper tear<span>chủ đề → video giải thích</span></button>
+      </div>
+
+      <div class="field" id="f-url">
+        <label for="url">Link sản phẩm <em>Shopee, TikTok Shop, Lazada…</em></label>
+        <input id="url" type="url" inputmode="url" placeholder="https://s.shopee.vn/…" value="https://s.shopee.vn/5LCDETz2Iy">
+        <div class="err" id="url-err"></div>
+      </div>
+      <div class="field" id="f-topic" hidden>
+        <label for="topic">Chủ đề</label>
+        <input id="topic" type="text" placeholder="Ví dụ: Phân tích Trần Bình An trong Kiếm Lai">
+        <div class="err" id="topic-err"></div>
+      </div>
+
+      <div class="field">
+        <div class="lbl"><span>Thời lượng</span><em id="dur-hint">15–60 giây</em></div>
+        <div class="range"><input id="dur" type="range" min="15" max="60" step="5" value="25" aria-label="Thời lượng"><span class="val" id="dur-val">25s</span></div>
+      </div>
+
+      <div class="two">
+        <div class="field">
+          <label for="voice">Giọng đọc</label>
+          <select id="voice">
+            <option>Giọng Donghua</option>
+            <option>Trúc Ly</option><option>Ngọc Huyền</option><option>Mai Anh</option><option>Thùy Dung</option><option>Ngọc Trân</option>
+            <option>Thiện Minh</option><option>Hải Đăng</option><option>Adam bựa</option><option>Quang Sơn</option><option>Thiền Tâm Đức</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="notes">Ghi chú <em>tuỳ chọn</em></label>
+          <input id="notes" type="text" placeholder="Muốn nhấn mạnh combo 2 hộp…">
+        </div>
+      </div>
+
+      <div class="field" id="f-style">
+        <div class="lbl"><span>Style giọng</span><em>đổi lời thoại, nhạc, SFX, chuyển động</em></div>
+        <div class="chips" id="styles" role="group" aria-label="Style giọng"></div>
+      </div>
+
+      <div class="field">
+        <div class="lbl"><span>Lệnh tương ứng</span><em>dán thẳng vào chat cũng được</em></div>
+        <div class="cmd" id="cmd"></div>
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" type="submit" id="add">Thêm vào hàng chờ</button>
+        <button class="btn ghost" type="button" id="copy">Copy lệnh</button>
+      </div>
+      <div class="toast" id="toast" role="status"></div>
+    </form>
+
+    <aside class="side" aria-label="Xem trước">
+      <div class="phone" id="phone">
+        <div class="prog"></div>
+        <div class="zone z1"></div><div class="zone z2"></div>
+        <div class="top" id="p-top">NƯỚC LỌC À?</div>
+        <div class="big" id="p-big">NHẠT NHƯ
+TÌNH CŨ</div>
+        <div class="cap" id="p-cap"><i>BẤM</i> GIỎ HÀNG NHA</div>
+      </div>
+      <dl class="specs" id="specs"></dl>
+    </aside>
+  </div>
+
+  <section class="queue" aria-labelledby="qh">
+    <div class="qhead"><h2 id="qh">Hàng chờ</h2><span class="count" id="count"></span></div>
+    <div id="jobs"></div>
+    <div class="howto">Thêm xong, quay lại cuộc trò chuyện với Claude và gõ <code>chạy hàng chờ</code>. Claude đọc các yêu cầu <b>Chờ</b>, làm từng video rồi cập nhật trạng thái và tên file ở đây.</div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const STYLES = [
+    {k:"hào hứng", wps:4.9, bpm:118, tempo:1.05, energy:1.0, top:"NƯỚC LỌC À?", big:"NHẠT QUÁ\nĐỔI GIÓ ĐI", cap:["THỬ","NGAY CÁI NÀY NÈ"]},
+    {k:"hài hước", wps:5.0, bpm:124, tempo:1.08, energy:1.3, top:"NƯỚC LỌC À?", big:"NHẠT NHƯ\nTÌNH CŨ", cap:["DỄ","TÍNH HƠN NGƯỜI YÊU CŨ"]},
+    {k:"nhí nhảnh", wps:5.1, bpm:128, tempo:1.10, energy:1.25, top:"BẠN ƠI!", big:"XINH XỈU\nLUÔN NÈ", cap:["MÊ","LẮM LUÔN Á"]},
+    {k:"nghiêm túc", wps:4.5, bpm:96, tempo:1.00, energy:0.55, top:"REVIEW", big:"CÓ ĐÁNG\nMUA KHÔNG?", cap:["THÀNH","PHẦN VÀ CÁCH DÙNG"]},
+    {k:"nhẹ nhàng", wps:4.3, bpm:86, tempo:0.97, energy:0.5, top:"BUỔI TỐI", big:"MỘT TÁCH\nTRÀ ẤM", cap:["THƯ","GIÃN MỘT CHÚT NHA"]},
+    {k:"kịch tính", wps:4.8, bpm:110, tempo:1.03, energy:1.1, top:"KHOAN ĐÃ", big:"ĐỪNG MUA\nVỘI!", cap:["NHƯNG","ĐIỀU BẤT NGỜ LÀ"]},
+  ];
+  const $ = (id) => document.getElementById(id);
+  const state = {kind:"affiliate", style:"hào hứng"};
+  let db = null, jobs = [], canWrite = true;
+
+  // ---- style chips
+  const chipsEl = $("styles");
+  STYLES.forEach((s) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "chip"; b.id = "st-" + s.k.replace(/\s/g, "-");
+    b.setAttribute("aria-pressed", String(s.k === state.style));
+    b.innerHTML = `${s.k}<small>${s.bpm} bpm</small>`;
+    b.addEventListener("click", () => { state.style = s.k; sync(); });
+    chipsEl.appendChild(b);
+  });
+
+  // ---- kind switch
+  document.querySelectorAll(".seg button").forEach((b) => b.addEventListener("click", () => {
+    if (state.kind === b.dataset.kind) return;
+    state.kind = b.dataset.kind;
+    const dur = $("dur");
+    if (state.kind === "affiliate") { dur.min = 15; dur.max = 60; dur.step = 5; dur.value = 25; }
+    else { dur.min = 1; dur.max = 10; dur.step = 1; dur.value = 6; }
+    sync();
+  }));
+
+  ["url","topic","dur","voice","notes"].forEach((id) => $(id).addEventListener("input", sync));
+
+  const fmtDur = (v) => state.kind === "affiliate" ? `${v}s` : `${v} phút`;
+  const q = (s) => /\s/.test(s) ? `"${s}"` : s;
+
+  function command() {
+    const d = $("dur").value, v = $("voice").value;
+    if (state.kind === "affiliate") {
+      return `/quancoder-video:affiliate-video-01 ${$("url").value.trim() || "<link sản phẩm>"} ${d}s ${q(v)} ${q(state.style)}`;
+    }
+    return `/quancoder-video:paper-tear-video ${q($("topic").value.trim() || "<chủ đề>")} ${d} phút ${q(v)}`;
+  }
+
+  function sync() {
+    const aff = state.kind === "affiliate";
+    $("k-aff").setAttribute("aria-pressed", String(aff));
+    $("k-pt").setAttribute("aria-pressed", String(!aff));
+    $("f-url").hidden = !aff; $("f-topic").hidden = aff; $("f-style").hidden = !aff;
+    $("dur-hint").textContent = aff ? "15–60 giây" : "1–10 phút";
+    $("dur-val").textContent = fmtDur($("dur").value);
+    chipsEl.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", String(c.textContent.startsWith(state.style))));
+    $("cmd").textContent = command();
+    const phone = $("phone");
+    const d = +$("dur").value;
+    let rows;
+    if (aff) {
+      const s = STYLES.find((x) => x.k === state.style);
+      phone.classList.remove("paper");
+      $("p-top").textContent = s.top; $("p-big").textContent = s.big;
+      $("p-cap").innerHTML = `<i>${s.cap[0]}</i> ${s.cap[1]}`;
+      phone.style.setProperty("--spd", (1.6 / s.energy).toFixed(2) + "s");
+      phone.style.setProperty("--tilt", (3 * s.energy).toFixed(1) + "deg");
+      const words = Math.round((d - 1.5) * s.wps);
+      const scenes = d <= 20 ? "4–5" : d <= 30 ? "6–7" : d <= 45 ? "8–9" : "9–11";
+      rows = [["Lời thoại", `≈ ${words} từ`], ["Số cảnh", scenes], ["Nhạc", `${s.bpm} bpm`], ["Tốc độ giọng", `×${s.tempo.toFixed(2)}`], ["Chuyển động", `${Math.round(s.energy * 100)}%`]];
+    } else {
+      phone.classList.add("paper");
+      $("p-top").textContent = "CHƯƠNG 1"; $("p-big").textContent = ($("topic").value.trim() || "Nếu ngày mai\nthế giới tu tiên").slice(0, 60);
+      $("p-cap").textContent = "phụ đề trên mẩu giấy xé";
+      phone.style.setProperty("--spd", "2.4s"); phone.style.setProperty("--tilt", "1deg");
+      const sec = d * 60;
+      rows = [["Lời thoại", `≈ ${Math.round(sec * 4.1)} từ`], ["Số cảnh", `≈ ${Math.round(sec / 15)}`], ["Chia phần", sec > 180 ? `${Math.ceil(sec / 175)} phần ≤ 3 phút` : "không cần"], ["Render", `≈ ${Math.round(sec / 60 * 8)} phút`]];
+    }
+    $("specs").innerHTML = rows.map(([a, b]) => `<dt>${a}</dt><dd>${b}</dd>`).join("");
+  }
+
+  // ---- validation + submit
+  function validate() {
+    let ok = true;
+    $("url-err").textContent = ""; $("topic-err").textContent = "";
+    if (state.kind === "affiliate") {
+      const u = $("url").value.trim();
+      if (!/^https?:\/\/\S+\.\S+/.test(u)) { $("url-err").textContent = "Dán link sản phẩm đầy đủ, bắt đầu bằng https://"; ok = false; }
+    } else if ($("topic").value.trim().length < 4) { $("topic-err").textContent = "Nhập chủ đề video (ít nhất 4 ký tự)."; ok = false; }
+    return ok;
+  }
+
+  let toastT;
+  function toast(msg, bad) {
+    const t = $("toast"); t.textContent = msg; t.style.color = bad ? "var(--bad)" : "var(--ok)";
+    clearTimeout(toastT); toastT = setTimeout(() => (t.textContent = ""), 4500);
+  }
+
+  $("form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!validate()) return;
+    if (!db) { toast("Hàng chờ chưa sẵn sàng. Dùng nút Copy lệnh rồi dán vào chat.", true); return; }
+    const aff = state.kind === "affiliate";
+    const now = new Date();
+    const id = "j" + now.getTime().toString(36);
+    const job = {
+      kind: state.kind,
+      target: aff ? $("url").value.trim() : $("topic").value.trim(),
+      duration: aff ? `${$("dur").value}s` : `${$("dur").value} phút`,
+      voice: $("voice").value,
+      style: aff ? state.style : "",
+      notes: $("notes").value.trim(),
+      command: command(),
+      status: "pending",
+      createdAt: now.toISOString(),
+    };
+    $("add").disabled = true;
+    try { await db.collection("jobs").doc(id).set(job); toast("Đã thêm vào hàng chờ. Gõ “chạy hàng chờ” trong chat."); $("notes").value = ""; sync(); }
+    catch (err) { toast(err && err.code === "invalid_argument" ? "Bạn chỉ có quyền xem trang này." : "Chưa lưu được, thử lại sau giây lát.", true); }
+    finally { $("add").disabled = false; }
+  });
+
+  $("copy").addEventListener("click", async () => {
+    const text = command();
+    try { await navigator.clipboard.writeText(text); toast("Đã copy lệnh."); }
+    catch { const r = document.createRange(); r.selectNodeContents($("cmd")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast("Đã chọn sẵn lệnh, bấm Ctrl+C để copy."); }
+  });
+
+  // ---- queue render
+  const LABEL = {pending: "Chờ", running: "Đang làm", done: "Xong", error: "Lỗi"};
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const when = (iso) => { try { return new Date(iso).toLocaleString("vi-VN", {hour:"2-digit", minute:"2-digit", day:"2-digit", month:"2-digit"}); } catch { return ""; } };
+  const EXAMPLE = [{id:"ex", example:true, kind:"affiliate", target:"https://s.shopee.vn/5LCDETz2Iy", duration:"25s", voice:"Giọng Donghua", style:"hài hước", status:"done", createdAt:"2026-09-26T08:30:00Z", resultFile:"tra-mam-xoi-hai-huoc-9x16.mp4", resultNote:"Ví dụ: trà lá mâm xôi, 25 giây, đã lưu vào thư mục video."}];
+
+  function render() {
+    const list = jobs.length ? jobs : EXAMPLE;
+    const pend = jobs.filter((j) => j.status === "pending").length;
+    $("count").textContent = jobs.length ? `${pend} chờ · ${jobs.length} tổng` : "chưa có yêu cầu";
+    $("jobs").innerHTML = list.map((j) => `
+      <article class="job st-${esc(j.status)}${j.example ? " example" : ""}">
+        <span class="kind">${j.kind === "affiliate" ? "Affiliate" : "Paper tear"}</span>
+        <div><div class="jt">${esc(j.target)}</div>
+          <div class="jm">${esc(j.duration)} · ${esc(j.voice)}${j.style ? " · " + esc(j.style) : ""}${j.notes ? " · " + esc(j.notes) : ""} · ${when(j.createdAt)}</div></div>
+        <span class="pill">${j.example ? "Ví dụ" : LABEL[j.status] || esc(j.status)}</span>
+        ${j.resultFile || j.resultNote ? `<div class="jr">${j.resultFile ? "<b>" + esc(j.resultFile) + "</b> · " : ""}${esc(j.resultNote)}</div>` : ""}
+        ${!j.example && canWrite && (j.status === "pending" || j.status === "error" || j.status === "done") ? `<div class="jact">
+          ${j.status === "pending" ? `<button class="link" data-del="${esc(j.id)}">Huỷ yêu cầu</button>` : `<button class="link" data-redo="${esc(j.id)}">Làm lại</button><button class="link" data-del="${esc(j.id)}">Xoá khỏi danh sách</button>`}
+        </div>` : ""}
+      </article>`).join("");
+  }
+
+  $("jobs").addEventListener("click", async (e) => {
+    const del = e.target.closest("[data-del]"), redo = e.target.closest("[data-redo]");
+    if (!db || (!del && !redo)) return;
+    try {
+      if (del) { await db.collection("jobs").doc(del.dataset.del).delete(); toast("Đã xoá."); }
+      if (redo) {
+        const j = jobs.find((x) => x.id === redo.dataset.redo); if (!j) return;
+        const now = new Date(), id = "j" + now.getTime().toString(36);
+        const {id: _i, resultFile, resultNote, startedAt, finishedAt, ...rest} = j;
+        await db.collection("jobs").doc(id).set({...rest, status: "pending", createdAt: now.toISOString()});
+        toast("Đã thêm lại vào hàng chờ.");
+      }
+    } catch { toast("Chưa thực hiện được, thử lại sau.", true); }
+  });
+
+  sync(); render();
+
+  // ---- db
+  (async () => {
+    try { db = await window.claude?.use?.("db"); } catch { db = null; }
+    if (!db) { $("dbtext").textContent = "Không kết nối được hàng chờ — dùng Copy lệnh"; return; }
+    $("dbdot").classList.add("on"); $("dbtext").textContent = "Hàng chờ đã kết nối";
+    db.collection("jobs").orderBy("createdAt", "desc").limit(50).onSnapshot((snap) => {
+      jobs = snap.docs.map((d) => ({id: d.id, ...d.data()})); render();
+    }, () => { $("dbdot").classList.remove("on"); $("dbtext").textContent = "Mất kết nối hàng chờ — tải lại trang"; });
+    try { const u = await window.claude.use("user"); const c = u ? await u.can("data.write") : null; if (c === false) { canWrite = false; $("add").disabled = true; render(); } } catch {}
+  })();
+})();
+</script>

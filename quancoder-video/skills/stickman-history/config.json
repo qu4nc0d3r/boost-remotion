@@ -1,0 +1,112 @@
+{
+  "_help": "Cấu hình mặc định cho /stickman-history. Sửa giá trị ở đây (hoặc bản ghi đè trong Project: stickman-history/config.json). {channel} {tiktok} {youtube} {fanpage} được thay bằng tên thật trong mọi dòng chữ.",
+  "channel": {
+    "name": "Thế Giới Donghua",
+    "tiktok": "Thế Giới Donghua",
+    "tiktokHandle": "",
+    "youtube": "Thế Giới Donghua",
+    "youtubeHandle": "",
+    "fanpage": "Ban Công Thố",
+    "watermark": "{channel}",
+    "watermarkSub": "TIKTOK · FB BAN CÔNG THỐ",
+    "outroLine": "Nếu thấy câu chuyện hay, hãy theo dõi kênh {channel} để nghe thêm nhiều câu chuyện lịch sử nữa nhé.",
+    "outroCard": {
+      "kicker": "CẢM ƠN BẠN ĐÃ XEM",
+      "title": "{channel}",
+      "sub": "TikTok: {tiktok} · FB: {fanpage}"
+    },
+    "noReupLine": "Video gốc thuộc {channel} – vui lòng không reup.",
+    "follow": "Theo dõi {channel} để xem thêm."
+  },
+  "voice": {
+    "name": "Giọng Donghua",
+    "ref": "voices/giong-donghua.wav",
+    "wordsPerSecond": 4.6,
+    "_note": "ref = đường dẫn mẫu giọng 3–8 s trong project (null để dùng giọng preset VieNeu theo name, vd. Thiện Minh). Chỉ nhân bản giọng của chính bạn hoặc có sự đồng ý."
+  },
+  "video": {
+    "targetMinutes": 4,
+    "fps": 30,
+    "resolution": "1080p",
+    "transitionFrames": 18,
+    "language": "vi",
+    "captions": true,
+    "captionFontSize": 46,
+    "captionMaxWords": 11,
+    "chapterSeconds": 3.7
+  },
+  "audio": {
+    "musicVolume": 0.11,
+    "sfxVolume": 1.0,
+    "transitionSwishVolume": 0.35,
+    "limiter": 0.89
+  },
+  "style": {
+    "ink": "#2b1d12",
+    "accent": "#b3261e",
+    "enemy": "#2f4a6d",
+    "gold": "#b8860b",
+    "water": "#6f9491",
+    "paperTone": [
+      1.0,
+      0.94,
+      0.82
+    ],
+    "stains": 0.045,
+    "vignette": 0.22,
+    "lineBoil": 3.2,
+    "watermark": true,
+    "watermarkOpacity": 0.55,
+    "watermarkEverySeconds": 7,
+    "defaultSky": "day",
+    "skyStrength": 0.6,
+    "paperOverlay": 0.45,
+    "transition": "ink",
+    "chapterCard": true
+  },
+  "render": {
+    "concurrency": 2,
+    "masterCrf": 20,
+    "deliveryCrf": 27,
+    "x264Preset": "slow",
+    "audioBitrate": "160k"
+  },
+  "thumbnail": {
+    "youtube": [
+      1280,
+      720
+    ],
+    "tiktok": [
+      1080,
+      1920
+    ],
+    "showChannel": true,
+    "youtubeSubLine": false
+  },
+  "meta": {
+    "platforms": [
+      "tiktok",
+      "youtube"
+    ],
+    "hashtagsBroad": {
+      "tiktok": [
+        "xuhuong",
+        "tiktokvietnam",
+        "fyp"
+      ],
+      "youtube": [],
+      "shorts": [
+        "shorts"
+      ]
+    },
+    "hashtagsFixed": [
+      "lichsuvietnam",
+      "kechuyenlichsu",
+      "nguoique",
+      "suviet"
+    ],
+    "aiDisclosure": "Lồng tiếng: VieNeu-TTS (AI), dùng giọng nhân bản của chủ kênh.",
+    "artCredit": "Hình minh hoạ: người que vẽ bằng code (Remotion), không dùng ảnh của bên thứ ba.",
+    "youtubeChapters": true
+  }
+}

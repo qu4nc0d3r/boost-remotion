@@ -1,0 +1,2504 @@
+{
+ "title": "Trận Bạch Đằng năm 938",
+ "capReplace": {
+  "năm chín trăm ba mươi tám": "năm 938",
+  "năm chín trăm ba mươi bảy": "năm 937",
+  "năm chín trăm linh năm": "năm 905",
+  "năm chín trăm ba mươi mốt": "năm 931",
+  "năm chín trăm ba mươi chín": "năm 939",
+  "năm chín trăm tám mươi mốt": "năm 981",
+  "năm một nghìn hai trăm tám mươi tám": "năm 1288",
+  "thế kỷ thứ mười": "thế kỷ X",
+  "một nghìn năm": "1000 năm"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "label": "Mở đầu",
+   "chapter": "MÙA ĐÔNG NĂM 938",
+   "text": "Mùa đông năm chín trăm ba mươi tám. Trên cửa sông Bạch Đằng, những chiến thuyền khổng lồ của quân Nam Hán hùng hổ tiến vào. Chúng mang theo tham vọng nuốt trọn đất Giao Châu. Nhưng chúng không hề biết, ngay dưới làn nước đục kia, một cái bẫy chết người đang chờ sẵn.",
+   "items": [
+    {
+     "type": "hills",
+     "y": 640,
+     "h": 150,
+     "seed": 2
+    },
+    {
+     "type": "cloud",
+     "x": 300,
+     "y": 200,
+     "drift": 0.4
+    },
+    {
+     "type": "cloud",
+     "x": 1400,
+     "y": 150,
+     "scale": 1.3,
+     "drift": 0.25
+    },
+    {
+     "type": "stakes",
+     "x1": 620,
+     "x2": 1340,
+     "n": 14,
+     "base": 1010,
+     "h": 240,
+     "at": 0.55,
+     "span": 0.25
+    },
+    {
+     "type": "boat",
+     "variant": "han",
+     "scale": 0.72,
+     "facing": -1,
+     "path": [
+      [
+       0,
+       2250,
+       0
+      ],
+      [
+       1,
+       1450,
+       0
+      ]
+     ],
+     "phase": 0
+    },
+    {
+     "type": "boat",
+     "variant": "han",
+     "scale": 0.6,
+     "facing": -1,
+     "path": [
+      [
+       0,
+       2600,
+       0
+      ],
+      [
+       1,
+       1850,
+       0
+      ]
+     ],
+     "phase": 20
+    },
+    {
+     "type": "boat",
+     "variant": "han",
+     "scale": 0.8,
+     "facing": -1,
+     "path": [
+      [
+       0,
+       1900,
+       0
+      ],
+      [
+       1,
+       1050,
+       0
+      ]
+     ],
+     "phase": 40
+    },
+    {
+     "type": "water",
+     "level": [
+      [
+       0,
+       640
+      ]
+     ]
+    },
+    {
+     "type": "fog",
+     "y": 650,
+     "opacity": 0.55,
+     "depth": 0.6
+    },
+    {
+     "type": "text",
+     "text": "?",
+     "style": "title",
+     "size": 150,
+     "color": "red",
+     "x": 980,
+     "y": 900,
+     "at": 0.78
+    }
+   ],
+   "sky": "dawn",
+   "camera": {
+    "keys": [
+     [
+      0,
+      1.0,
+      960,
+      540
+     ],
+     [
+      0.5,
+      1.0,
+      960,
+      560
+     ],
+     [
+      1,
+      1.32,
+      990,
+      760
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s02",
+   "label": "Tựa đề",
+   "text": "Đây là câu chuyện về trận Bạch Đằng, trận thủy chiến đã khép lại hơn một nghìn năm Bắc thuộc, và mở ra kỷ nguyên độc lập lâu dài cho dân tộc Việt Nam.",
+   "items": [
+    {
+     "type": "sun",
+     "x": 1650,
+     "y": 200,
+     "r": 55
+    },
+    {
+     "type": "hills",
+     "y": 860,
+     "h": 220,
+     "seed": 5,
+     "x1": -40,
+     "x2": 900
+    },
+    {
+     "type": "ground",
+     "y": 860
+    },
+    {
+     "type": "stick",
+     "x": 330,
+     "y": 860,
+     "scale": 2.08,
+     "hat": "general",
+     "weapon": "flag",
+     "pose": "stand",
+     "poses": [
+      [
+       0.35,
+       "raise"
+      ]
+     ],
+     "label": "Ngô Quyền",
+     "labelAt": 0.3
+    },
+    {
+     "type": "text",
+     "text": "TRẬN BẠCH ĐẰNG",
+     "style": "title",
+     "size": 140,
+     "color": "red",
+     "x": 1250,
+     "y": 470,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "text": "938",
+     "style": "stamp",
+     "size": 96,
+     "w": 290,
+     "x": 1250,
+     "y": 650,
+     "at": 0.25
+    },
+    {
+     "type": "text",
+     "text": "Trận thủy chiến khép lại 1000 năm Bắc thuộc",
+     "style": "hand",
+     "size": 50,
+     "x": 1250,
+     "y": 790,
+     "at": 0.45
+    }
+   ],
+   "sky": "dawn"
+  },
+  {
+   "id": "s03",
+   "label": "Bắc thuộc",
+   "chapter": "I · BỐI CẢNH",
+   "text": "Để hiểu vì sao trận đánh này quan trọng đến vậy, ta phải lùi lại rất xa. Suốt hơn một nghìn năm, các triều đại phương Bắc nối nhau cai trị đất Việt. Người dân phải cống nạp sản vật, chịu sưu cao thuế nặng. Nhưng các cuộc khởi nghĩa chưa bao giờ dứt.",
+   "items": [
+    {
+     "type": "ground",
+     "y": 860
+    },
+    {
+     "type": "throne",
+     "x": 1620,
+     "y": 860,
+     "scale": 1.188,
+     "color": "#2f4a6d"
+    },
+    {
+     "type": "stick",
+     "team": "han",
+     "hat": "hanofficial",
+     "x": 1620,
+     "y": 842,
+     "facing": -1,
+     "pose": "sit",
+     "scale": 1.365,
+     "label": "Quan cai trị",
+     "mood": "happy"
+    },
+    {
+     "type": "stick",
+     "team": "han",
+     "hat": "han",
+     "weapon": "spear",
+     "x": 1400,
+     "y": 860,
+     "facing": -1,
+     "scale": 1.17
+    },
+    {
+     "type": "crowd",
+     "n": 5,
+     "dx": -169,
+     "hat": "conical",
+     "weapon": "gift",
+     "scale": 1.105,
+     "path": [
+      [
+       0,
+       150,
+       860
+      ],
+      [
+       0.42,
+       1180,
+       860
+      ]
+     ],
+     "pose": "walk",
+     "poses": [
+      [
+       0.42,
+       "bow"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "text": "Hơn 1000 năm Bắc thuộc",
+     "style": "title",
+     "size": 76,
+     "x": 800,
+     "y": 190,
+     "at": 0.12
+    },
+    {
+     "type": "stick",
+     "x": 360,
+     "y": 860,
+     "scale": 1.43,
+     "hat": "band",
+     "weapon": "flag",
+     "pose": "raise",
+     "at": 0.74,
+     "label": "Khởi nghĩa!"
+    },
+    {
+     "type": "text",
+     "text": "Hai Bà Trưng · Bà Triệu · Lý Bí · Mai Thúc Loan...",
+     "style": "hand",
+     "size": 44,
+     "x": 800,
+     "y": 290,
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "label": "Tự chủ",
+   "text": "Đến đầu thế kỷ thứ mười, nhà Đường suy yếu. Năm chín trăm linh năm, Khúc Thừa Dụ nắm quyền tự chủ. Năm chín trăm ba mươi mốt, hào trưởng Dương Đình Nghệ đánh đuổi quân Nam Hán, giành lại thành Đại La, rồi tự xưng Tiết độ sứ.",
+   "items": [
+    {
+     "type": "timeline",
+     "y": 300,
+     "x1": 180,
+     "x2": 1740,
+     "at": 0.05,
+     "marks": [
+      {
+       "x": 480,
+       "year": "905",
+       "label": "Khúc Thừa Dụ\ngiành quyền tự chủ",
+       "at": 0.18
+      },
+      {
+       "x": 1200,
+       "year": "931",
+       "label": "Dương Đình Nghệ\nđánh đuổi Nam Hán",
+       "color": "red",
+       "at": 0.48
+      }
+     ]
+    },
+    {
+     "type": "ground",
+     "y": 880
+    },
+    {
+     "type": "crowd",
+     "n": 3,
+     "dx": 138,
+     "team": "han",
+     "facing": 1,
+     "pose": "run",
+     "scale": 1.04,
+     "at": 0.5,
+     "path": [
+      [
+       0.5,
+       720,
+       880
+      ],
+      [
+       1,
+       1900,
+       880
+      ]
+     ]
+    },
+    {
+     "type": "stick",
+     "hat": "general",
+     "color": "#b8860b",
+     "weapon": "sword",
+     "pose": "run",
+     "scale": 1.235,
+     "at": 0.5,
+     "path": [
+      [
+       0.5,
+       260,
+       880
+      ],
+      [
+       1,
+       1350,
+       880
+      ]
+     ],
+     "label": "Dương Đình Nghệ"
+    },
+    {
+     "type": "crowd",
+     "n": 3,
+     "dx": -150,
+     "hat": "band",
+     "weapon": "spear",
+     "pose": "run",
+     "scale": 1.04,
+     "at": 0.52,
+     "path": [
+      [
+       0.5,
+       110,
+       880
+      ],
+      [
+       1,
+       1180,
+       880
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "label": "Ngô Quyền",
+   "chapter": "II · NGÔ QUYỀN",
+   "text": "Dưới trướng Dương Đình Nghệ có một viên tướng trẻ tài giỏi, người Đường Lâm, tên là Ngô Quyền. Quý trọng tài năng ấy, Dương Đình Nghệ gả con gái cho ông, và giao cho ông trấn giữ vùng Ái Châu, tức Thanh Hóa ngày nay.",
+   "items": [
+    {
+     "type": "palace",
+     "x": 1500,
+     "y": 860,
+     "scale": 0.8
+    },
+    {
+     "type": "ground",
+     "y": 860
+    },
+    {
+     "type": "stick",
+     "x": 1270,
+     "y": 860,
+     "facing": -1,
+     "hat": "general",
+     "color": "#b8860b",
+     "weapon": "scroll",
+     "scale": 1.43,
+     "pose": "stand",
+     "poses": [
+      [
+       0.66,
+       "give"
+      ]
+     ],
+     "label": "Dương Đình Nghệ",
+     "labelOut": 0.4
+    },
+    {
+     "type": "stick",
+     "hat": "general",
+     "weapon": "sword",
+     "scale": 1.43,
+     "path": [
+      [
+       0,
+       150,
+       860
+      ],
+      [
+       0.22,
+       800,
+       860
+      ]
+     ],
+     "pose": "walk",
+     "poses": [
+      [
+       0.22,
+       "kneel"
+      ],
+      [
+       0.5,
+       "stand"
+      ]
+     ],
+     "label": "Ngô Quyền",
+     "labelOut": 0.42
+    },
+    {
+     "type": "stick",
+     "x": 1090,
+     "y": 860,
+     "facing": -1,
+     "hat": "hair",
+     "scale": 1.235,
+     "at": 0.42,
+     "pose": "stand",
+     "label": "Con gái họ Dương",
+     "labelOut": 0.62,
+     "labelAt": 0.44,
+     "moods": [
+      [
+       0.45,
+       "happy"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "text": "Kết duyên",
+     "style": "hand",
+     "size": 56,
+     "color": "red",
+     "x": 950,
+     "y": 380,
+     "at": 0.45,
+     "out": 0.64
+    },
+    {
+     "type": "text",
+     "text": "Trấn giữ Ái Châu",
+     "style": "stamp",
+     "size": 56,
+     "w": 520,
+     "x": 520,
+     "y": 260,
+     "at": 0.7
+    }
+   ],
+   "camera": {
+    "keys": [
+     [
+      0,
+      1,
+      960,
+      540
+     ],
+     [
+      0.62,
+      1.0,
+      960,
+      540
+     ],
+     [
+      0.74,
+      1.45,
+      1130,
+      600
+     ],
+     [
+      1,
+      1.45,
+      1130,
+      600
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s06",
+   "label": "Phản chủ",
+   "night": true,
+   "text": "Nhưng năm chín trăm ba mươi bảy, một biến cố đẫm máu xảy ra. Nha tướng Kiều Công Tiễn, vì tham vọng quyền lực, đã ra tay sát hại chính chủ tướng của mình là Dương Đình Nghệ, rồi chiếm lấy chức Tiết độ sứ.",
+   "shake": [
+    [
+     0.5,
+     12
+    ]
+   ],
+   "sfx": [
+    [
+     0.5,
+     "hit",
+     0.6
+    ]
+   ],
+   "items": [
+    {
+     "type": "moon",
+     "x": 260,
+     "y": 180,
+     "r": 60
+    },
+    {
+     "type": "palace",
+     "x": 1350,
+     "y": 860,
+     "scale": 0.8
+    },
+    {
+     "type": "ground",
+     "y": 860
+    },
+    {
+     "type": "fire",
+     "x": 1560,
+     "y": 760,
+     "scale": 0.5,
+     "sparks": false,
+     "glowR": 200
+    },
+    {
+     "type": "text",
+     "text": "937",
+     "style": "stamp",
+     "size": 80,
+     "w": 240,
+     "x": 330,
+     "y": 420,
+     "at": 0.02
+    },
+    {
+     "type": "stick",
+     "x": 1180,
+     "y": 860,
+     "facing": 1,
+     "hat": "general",
+     "color": "#b8860b",
+     "weapon": "scroll",
+     "scale": 1.43,
+     "pose": "hold",
+     "faces": [
+      [
+       0.47,
+       -1
+      ]
+     ],
+     "poses": [
+      [
+       0.47,
+       "fear"
+      ],
+      [
+       0.53,
+       "dead"
+      ]
+     ],
+     "label": "Dương Đình Nghệ",
+     "labelOut": 0.5
+    },
+    {
+     "type": "stick",
+     "hat": "hood",
+     "weapon": "dagger",
+     "scale": 1.43,
+     "path": [
+      [
+       0,
+       -120,
+       860
+      ],
+      [
+       0.46,
+       1050,
+       860
+      ]
+     ],
+     "pose": "walk",
+     "poses": [
+      [
+       0.46,
+       "stab"
+      ],
+      [
+       0.62,
+       "stand"
+      ],
+      [
+       0.72,
+       "raise"
+      ]
+     ],
+     "label": "Kiều Công Tiễn",
+     "labelAt": 0.25,
+     "mood": "angry"
+    },
+    {
+     "type": "text",
+     "text": "Cướp chức Tiết độ sứ",
+     "style": "hand",
+     "size": 56,
+     "color": "red",
+     "x": 1020,
+     "y": 300,
+     "at": 0.78
+    }
+   ],
+   "transition": "fade",
+   "camera": {
+    "keys": [
+     [
+      0,
+      1,
+      960,
+      540
+     ],
+     [
+      0.4,
+      1.12,
+      1020,
+      560
+     ],
+     [
+      0.5,
+      1.4,
+      1110,
+      620
+     ],
+     [
+      1,
+      1.3,
+      1100,
+      600
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s07",
+   "label": "Khởi binh",
+   "text": "Tin dữ truyền đến Ái Châu. Ngô Quyền vô cùng căm phẫn. Ông lập tức tập hợp quân sĩ, kéo ra Bắc để hỏi tội kẻ phản chủ. Hào kiệt và dân chúng khắp nơi nô nức hưởng ứng theo ông.",
+   "sfx": [
+    [
+     0.3,
+     "drum",
+     0.5
+    ]
+   ],
+   "items": [
+    {
+     "type": "map",
+     "title": "Khởi binh",
+     "at": 0,
+     "places": [
+      {
+       "name": "Ái Châu",
+       "at": 0.05,
+       "color": "red",
+       "pulse": true
+      },
+      {
+       "name": "Đường Lâm",
+       "at": 0.1,
+       "dx": -20,
+       "anchor": "end"
+      },
+      {
+       "name": "Đại La",
+       "at": 0.35,
+       "star": true,
+       "dx": 18
+      }
+     ],
+     "routes": [
+      {
+       "points": [
+        "Ái Châu",
+        [
+         105.6,
+         20.2
+        ],
+        [
+         105.7,
+         20.6
+        ],
+        "Đại La"
+       ],
+       "color": "red",
+       "at": 0.3,
+       "dur": 150,
+       "label": "Ngô Quyền"
+      }
+     ],
+     "extent": [
+      103.9,
+      109.3,
+      19.2,
+      21.8
+     ],
+     "seaAt": [
+      107.6,
+      20.1
+     ]
+    },
+    {
+     "type": "text",
+     "text": "Hào kiệt khắp nơi hưởng ứng",
+     "style": "hand",
+     "size": 50,
+     "x": 1300,
+     "y": 860,
+     "at": 0.7
+    }
+   ]
+  },
+  {
+   "id": "s08",
+   "label": "Rước giặc",
+   "chapter": "III · RƯỚC GIẶC",
+   "text": "Biết mình không địch nổi, Kiều Công Tiễn làm một việc khiến hậu thế muôn đời khinh bỉ. Hắn sai người mang lễ vật sang nước Nam Hán, cầu xin vua Nam Hán là Lưu Cung đem quân sang cứu viện.",
+   "items": [
+    {
+     "type": "ground",
+     "y": 860
+    },
+    {
+     "type": "palace",
+     "x": 300,
+     "y": 860,
+     "scale": 0.55
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       960,
+       140
+      ],
+      [
+       955,
+       500
+      ],
+      [
+       962,
+       860
+      ]
+     ],
+     "w": 3,
+     "nohead": true,
+     "opacity": 0.6,
+     "at": 0
+    },
+    {
+     "type": "text",
+     "text": "Giao Châu",
+     "style": "title",
+     "size": 64,
+     "x": 420,
+     "y": 240
+    },
+    {
+     "type": "text",
+     "text": "Nam Hán",
+     "style": "title",
+     "size": 64,
+     "color": "han",
+     "x": 1500,
+     "y": 240
+    },
+    {
+     "type": "stick",
+     "x": 520,
+     "y": 860,
+     "hat": "hood",
+     "scale": 1.365,
+     "pose": "think",
+     "poses": [
+      [
+       0.25,
+       "point"
+      ],
+      [
+       0.45,
+       "stand"
+      ]
+     ],
+     "label": "Kiều Công Tiễn"
+    },
+    {
+     "type": "stick",
+     "hat": "conical",
+     "weapon": "gift",
+     "scale": 1.17,
+     "at": 0.3,
+     "path": [
+      [
+       0.3,
+       640,
+       860
+      ],
+      [
+       0.68,
+       1330,
+       860
+      ]
+     ],
+     "pose": "run",
+     "poses": [
+      [
+       0.68,
+       "bow"
+      ]
+     ]
+    },
+    {
+     "type": "throne",
+     "x": 1620,
+     "y": 860,
+     "color": "#2f4a6d",
+     "scale": 1.25
+    },
+    {
+     "type": "stick",
+     "team": "han",
+     "hat": "hanking",
+     "x": 1620,
+     "y": 842,
+     "facing": -1,
+     "pose": "sit",
+     "scale": 1.365,
+     "label": "Lưu Cung",
+     "labelAt": 0.6
+    },
+    {
+     "type": "bubble",
+     "text": "Xin bệ hạ\nđem quân sang cứu!",
+     "x": 1160,
+     "y": 470,
+     "at": 0.72,
+     "tail": [
+      80,
+      150
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "label": "Hoằng Tháo",
+   "text": "Lưu Cung mừng rỡ, vì đây là cơ hội vàng để chiếm lại Giao Châu. Ông phong con trai là Hoằng Tháo làm Giao Vương, giao cho một đạo thủy quân lớn vượt biển tiến sang. Còn Lưu Cung tự mình dẫn quân đóng ở Hải Môn để tiếp ứng.",
+   "items": [
+    {
+     "type": "map",
+     "title": "Thủy quân Nam Hán",
+     "at": 0,
+     "places": [
+      {
+       "name": "Quảng Châu",
+       "at": 0.02,
+       "color": "han",
+       "dx": -20,
+       "anchor": "end"
+      },
+      {
+       "name": "Hải Môn",
+       "label": "Hải Môn · Lưu Cung",
+       "at": 0.75,
+       "color": "han",
+       "pulse": true,
+       "dy": -20
+      },
+      {
+       "name": "Bạch Đằng",
+       "at": 0.55,
+       "color": "red",
+       "star": true,
+       "dx": -20,
+       "dy": 40,
+       "anchor": "end"
+      },
+      {
+       "name": "Đại La",
+       "at": 0.05
+      }
+     ],
+     "routes": [
+      {
+       "points": [
+        "Quảng Châu",
+        [
+         113.0,
+         21.9
+        ],
+        [
+         111.6,
+         21.1
+        ],
+        [
+         110.45,
+         20.15
+        ],
+        [
+         109.3,
+         20.5
+        ],
+        [
+         108.3,
+         20.9
+        ],
+        [
+         107.4,
+         20.7
+        ],
+        [
+         106.9,
+         20.75
+        ]
+       ],
+       "color": "han",
+       "at": 0.3,
+       "dur": 170,
+       "icon": "boat",
+       "label": "Hoằng Tháo"
+      }
+     ],
+     "extent": [
+      106.3,
+      113.5,
+      19.8,
+      23.55
+     ],
+     "seaAt": [
+      108.6,
+      20.4
+     ]
+    },
+    {
+     "type": "text",
+     "text": "GIAO VƯƠNG",
+     "style": "stamp",
+     "size": 56,
+     "w": 400,
+     "x": 1450,
+     "y": 820,
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "label": "Diệt phản tặc",
+   "text": "Nhưng Ngô Quyền hành động nhanh hơn. Cuối năm chín trăm ba mươi tám, trước khi thủy quân Nam Hán kịp tới nơi, ông đã tiến vào thành Đại La, giết Kiều Công Tiễn. Quân Nam Hán giờ đây mất đi nội ứng.",
+   "shake": [
+    [
+     0.5,
+     10
+    ]
+   ],
+   "sfx": [
+    [
+     0.3,
+     "clash",
+     0.5
+    ],
+    [
+     0.5,
+     "hit",
+     0.6
+    ]
+   ],
+   "items": [
+    {
+     "type": "palace",
+     "x": 1450,
+     "y": 860,
+     "scale": 0.75,
+     "sign": "ĐẠI LA"
+    },
+    {
+     "type": "ground",
+     "y": 860
+    },
+    {
+     "type": "text",
+     "text": "Cuối năm 938",
+     "style": "stamp",
+     "size": 56,
+     "w": 420,
+     "x": 360,
+     "y": 260,
+     "at": 0.02
+    },
+    {
+     "type": "stick",
+     "x": 1080,
+     "y": 860,
+     "facing": -1,
+     "hat": "hood",
+     "weapon": "dagger",
+     "scale": 1.365,
+     "pose": "stand",
+     "poses": [
+      [
+       0.25,
+       "fight"
+      ],
+      [
+       0.5,
+       "dead"
+      ]
+     ],
+     "label": "Kiều Công Tiễn",
+     "labelOut": 0.5
+    },
+    {
+     "type": "stick",
+     "hat": "general",
+     "weapon": "sword",
+     "scale": 1.43,
+     "path": [
+      [
+       0.05,
+       80,
+       860
+      ],
+      [
+       0.26,
+       800,
+       860
+      ]
+     ],
+     "pose": "run",
+     "poses": [
+      [
+       0.26,
+       "fight"
+      ],
+      [
+       0.52,
+       "raise"
+      ]
+     ],
+     "label": "Ngô Quyền"
+    },
+    {
+     "type": "text",
+     "text": "Nam Hán mất nội ứng!",
+     "style": "title",
+     "size": 70,
+     "color": "red",
+     "x": 960,
+     "y": 230,
+     "at": 0.78
+    }
+   ],
+   "transition": "page"
+  },
+  {
+   "id": "s11",
+   "label": "Bàn kế",
+   "chapter": "IV · KẾ SÁCH",
+   "text": "Ngô Quyền triệu tập các tướng bàn kế. Ông nói, Hoằng Tháo là đứa trẻ khờ dại, đem quân từ xa tới, lính còn mệt mỏi, lại mất nội ứng, đã mất vía trước rồi. Quân ta sức còn khỏe, đánh quân mệt, tất phá được. Nhưng chúng có lợi thế chiến thuyền, nếu không phòng bị trước, thì thắng thua chưa biết thế nào.",
+   "items": [
+    {
+     "type": "tent",
+     "x": 960,
+     "y": 860,
+     "scale": 1.55
+    },
+    {
+     "type": "ground",
+     "y": 860
+    },
+    {
+     "type": "fire",
+     "x": 880,
+     "y": 870,
+     "scale": 0.55,
+     "glowR": 320
+    },
+    {
+     "type": "stick",
+     "x": 600,
+     "y": 860,
+     "hat": "general",
+     "weapon": "sword",
+     "scale": 1.495,
+     "pose": "talk",
+     "poses": [
+      [
+       0.82,
+       "think"
+      ]
+     ],
+     "label": "Ngô Quyền",
+     "labelOut": 0.12
+    },
+    {
+     "type": "crowd",
+     "n": 3,
+     "x": 1120,
+     "y": 860,
+     "dx": 212,
+     "facing": -1,
+     "hat": "general",
+     "scale": 1.3,
+     "pose": "stand",
+     "poses": [
+      [
+       0.55,
+       "think"
+      ]
+     ],
+     "moods": [
+      [
+       0.3,
+       "neutral"
+      ],
+      [
+       0.6,
+       "scared"
+      ]
+     ]
+    },
+    {
+     "type": "bubble",
+     "text": "Hoằng Tháo là đứa trẻ khờ dại,\nquân ở xa tới đã mệt mỏi...",
+     "size": 40,
+     "x": 700,
+     "y": 330,
+     "at": 0.08,
+     "out": 0.5,
+     "tail": [
+      -40,
+      190
+     ]
+    },
+    {
+     "type": "bubble",
+     "text": "Nhưng chúng mạnh về chiến thuyền,\nphải phòng bị trước!",
+     "size": 40,
+     "color": "red",
+     "x": 700,
+     "y": 330,
+     "at": 0.58,
+     "tail": [
+      -40,
+      190
+     ]
+    }
+   ],
+   "sky": "dusk",
+   "camera": {
+    "keys": [
+     [
+      0,
+      1,
+      960,
+      540
+     ],
+     [
+      0.55,
+      1.05,
+      900,
+      540
+     ],
+     [
+      1,
+      1.25,
+      760,
+      560
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s12",
+   "label": "Đóng cọc",
+   "text": "Và ông nghĩ ra một kế sách táo bạo. Ông sai quân vào rừng đẵn những thân cây lớn, vạt nhọn đầu, bịt sắt, rồi đem đóng ngầm xuống lòng sông ở cửa Bạch Đằng. Rất nhiều cây cọc được cắm chi chít, mũi nhọn chếch về phía biển.",
+   "sfx": [
+    [
+     0.35,
+     "hammer",
+     0.4
+    ]
+   ],
+   "items": [
+    {
+     "type": "tree",
+     "x": 120,
+     "y": 860,
+     "scale": 1.2
+    },
+    {
+     "type": "tree",
+     "x": 330,
+     "y": 860,
+     "scale": 0.95
+    },
+    {
+     "type": "ground",
+     "y": 860,
+     "x1": -40,
+     "x2": 950
+    },
+    {
+     "type": "bed",
+     "y": 935
+    },
+    {
+     "type": "crowd",
+     "n": 2,
+     "dx": -412,
+     "hat": "band",
+     "weapon": "log",
+     "pose": "carrywalk",
+     "scale": 1.105,
+     "path": [
+      [
+       0.05,
+       150,
+       860
+      ],
+      [
+       0.5,
+       800,
+       860
+      ]
+     ],
+     "poses": [
+      [
+       0.5,
+       "stand"
+      ]
+     ]
+    },
+    {
+     "type": "stakes",
+     "x1": 1020,
+     "x2": 1850,
+     "n": 12,
+     "base": 945,
+     "h": 190,
+     "at": 0.35,
+     "span": 0.5
+    },
+    {
+     "type": "crowd",
+     "n": 3,
+     "x": 1120,
+     "y": 935,
+     "dx": 375,
+     "hat": "band",
+     "weapon": "hammer",
+     "pose": "hammer",
+     "scale": 1.04,
+     "at": 0.3
+    },
+    {
+     "type": "text",
+     "text": "Cọc gỗ vạt nhọn, bịt sắt",
+     "style": "hand",
+     "size": 54,
+     "x": 1400,
+     "y": 300,
+     "at": 0.4
+    },
+    {
+     "type": "text",
+     "text": "phía biển",
+     "style": "hand",
+     "size": 50,
+     "color": "red",
+     "x": 1700,
+     "y": 520,
+     "at": 0.8
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1520,
+       560
+      ],
+      [
+       1650,
+       555
+      ],
+      [
+       1820,
+       560
+      ]
+     ],
+     "color": "red",
+     "at": 0.8,
+     "dur": 20
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "label": "Thủy triều",
+   "text": "Bí mật nằm ở thủy triều. Cửa sông Bạch Đằng chịu ảnh hưởng thủy triều rất mạnh, mực nước lúc lên và lúc xuống chênh nhau tới vài mét. Khi triều lên, cả bãi cọc chìm sâu dưới nước, không ai nhìn thấy. Khi triều rút, những mũi cọc nhọn hoắt trồi lên, như một hàm răng thép.",
+   "camera": {
+    "zoom": [
+     [
+      0,
+      1.02
+     ],
+     [
+      1,
+      1.1
+     ]
+    ],
+    "focus": [
+     960,
+     760
+    ]
+   },
+   "items": [
+    {
+     "type": "bed",
+     "y": 1000
+    },
+    {
+     "type": "stakes",
+     "x1": 480,
+     "x2": 1450,
+     "n": 15,
+     "base": 1010,
+     "h": 250,
+     "at": 0,
+     "span": 0.12
+    },
+    {
+     "type": "water",
+     "level": [
+      [
+       0,
+       620
+      ],
+      [
+       0.45,
+       620
+      ],
+      [
+       0.78,
+       880
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "text": "TRIỀU LÊN",
+     "style": "title",
+     "size": 96,
+     "color": "han",
+     "x": 960,
+     "y": 250,
+     "at": 0.25,
+     "out": 0.5
+    },
+    {
+     "type": "text",
+     "text": "cọc ẩn dưới nước",
+     "style": "hand",
+     "size": 50,
+     "x": 960,
+     "y": 360,
+     "at": 0.35,
+     "out": 0.5
+    },
+    {
+     "type": "text",
+     "text": "TRIỀU RÚT",
+     "style": "title",
+     "size": 96,
+     "color": "red",
+     "x": 960,
+     "y": 250,
+     "at": 0.58
+    },
+    {
+     "type": "arrow",
+     "points": [
+      [
+       1680,
+       520
+      ],
+      [
+       1685,
+       700
+      ],
+      [
+       1680,
+       880
+      ]
+     ],
+     "color": "red",
+     "at": 0.5,
+     "dur": 40
+    },
+    {
+     "type": "text",
+     "text": "chênh\nvài mét",
+     "style": "hand",
+     "size": 44,
+     "x": 1540,
+     "y": 640,
+     "at": 0.5
+    },
+    {
+     "type": "text",
+     "text": "hàm răng thép!",
+     "style": "hand",
+     "size": 60,
+     "color": "red",
+     "x": 960,
+     "y": 380,
+     "at": 0.85
+    }
+   ],
+   "transition": "scroll"
+  },
+  {
+   "id": "s14",
+   "label": "Mai phục",
+   "text": "Ngô Quyền cho quân mai phục trong những bụi lau sậy rậm rạp ở hai bên bờ sông. Ở phía thượng nguồn, ông đích thân chỉ huy đại quân chờ sẵn. Còn một toán thuyền nhẹ được giao nhiệm vụ đặc biệt, ra cửa biển khiêu chiến, rồi giả thua để dụ địch.",
+   "items": [
+    {
+     "type": "hills",
+     "y": 640,
+     "h": 120,
+     "seed": 4
+    },
+    {
+     "type": "fog",
+     "y": 660,
+     "opacity": 0.6,
+     "depth": 0.5
+    },
+    {
+     "type": "boat",
+     "variant": "viet",
+     "scale": 0.7,
+     "facing": 1,
+     "crew": 3,
+     "at": 0.62,
+     "path": [
+      [
+       0.62,
+       700,
+       0
+      ],
+      [
+       1,
+       1150,
+       0
+      ]
+     ]
+    },
+    {
+     "type": "boat",
+     "variant": "viet",
+     "scale": 0.6,
+     "facing": 1,
+     "crew": 3,
+     "at": 0.66,
+     "path": [
+      [
+       0.66,
+       500,
+       0
+      ],
+      [
+       1,
+       900,
+       0
+      ]
+     ],
+     "phase": 25
+    },
+    {
+     "type": "water",
+     "level": [
+      [
+       0,
+       660
+      ]
+     ]
+    },
+    {
+     "type": "bank",
+     "x1": -40,
+     "x2": 640,
+     "y": 820,
+     "side": "left"
+    },
+    {
+     "type": "bank",
+     "x1": 1320,
+     "x2": 1960,
+     "y": 820,
+     "side": "right"
+    },
+    {
+     "type": "crowd",
+     "n": 4,
+     "x": 60,
+     "y": 850,
+     "dx": 131,
+     "hat": "band",
+     "weapons": [
+      "bow",
+      "spear"
+     ],
+     "pose": "kneel",
+     "scale": 0.975,
+     "at": 0.05
+    },
+    {
+     "type": "reeds",
+     "x1": -20,
+     "x2": 560,
+     "y": 855,
+     "n": 16,
+     "h": 150
+    },
+    {
+     "type": "crowd",
+     "n": 4,
+     "x": 1480,
+     "y": 850,
+     "dx": 131,
+     "facing": -1,
+     "hat": "band",
+     "weapons": [
+      "bow",
+      "spear"
+     ],
+     "pose": "kneel",
+     "scale": 0.975,
+     "at": 0.12
+    },
+    {
+     "type": "reeds",
+     "x1": 1400,
+     "x2": 1960,
+     "y": 855,
+     "n": 16,
+     "h": 150
+    },
+    {
+     "type": "text",
+     "text": "Mai phục hai bờ",
+     "style": "hand",
+     "size": 54,
+     "x": 960,
+     "y": 300,
+     "at": 0.08,
+     "out": 0.6
+    },
+    {
+     "type": "text",
+     "text": "Thuyền nhẹ ra dụ địch",
+     "style": "hand",
+     "size": 54,
+     "color": "red",
+     "x": 960,
+     "y": 300,
+     "at": 0.66
+    }
+   ],
+   "sky": "dawn"
+  },
+  {
+   "id": "s15",
+   "label": "Dụ địch",
+   "chapter": "V · ĐẠI CHIẾN",
+   "text": "Khi Hoằng Tháo kéo đến, triều đang lên cao. Thuyền nhẹ của quân ta ra đánh, rồi vờ thua chạy sâu vào trong sông. Hoằng Tháo đắc thắng, thúc cả đoàn chiến thuyền đuổi theo, vượt qua bãi cọc đang nằm im lìm dưới mặt nước.",
+   "items": [
+    {
+     "type": "hills",
+     "y": 640,
+     "h": 130,
+     "seed": 9
+    },
+    {
+     "type": "stakes",
+     "x1": 650,
+     "x2": 1350,
+     "n": 14,
+     "base": 1010,
+     "h": 240,
+     "at": 0
+    },
+    {
+     "type": "boat",
+     "variant": "viet",
+     "scale": 0.65,
+     "facing": -1,
+     "crew": 3,
+     "path": [
+      [
+       0,
+       1500,
+       0
+      ],
+      [
+       0.8,
+       -300,
+       0
+      ]
+     ]
+    },
+    {
+     "type": "boat",
+     "variant": "viet",
+     "scale": 0.58,
+     "facing": -1,
+     "crew": 3,
+     "path": [
+      [
+       0,
+       1750,
+       0
+      ],
+      [
+       0.85,
+       -200,
+       0
+      ]
+     ],
+     "phase": 30
+    },
+    {
+     "type": "boat",
+     "variant": "han",
+     "scale": 0.72,
+     "facing": -1,
+     "path": [
+      [
+       0.25,
+       2300,
+       0
+      ],
+      [
+       1,
+       800,
+       0
+      ]
+     ]
+    },
+    {
+     "type": "boat",
+     "variant": "han",
+     "scale": 0.62,
+     "facing": -1,
+     "path": [
+      [
+       0.3,
+       2500,
+       0
+      ],
+      [
+       1,
+       1350,
+       0
+      ]
+     ],
+     "phase": 40
+    },
+    {
+     "type": "water",
+     "level": [
+      [
+       0,
+       640
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "text": "Triều lên · cọc ẩn",
+     "style": "hand",
+     "size": 48,
+     "x": 330,
+     "y": 200,
+     "at": 0.05
+    },
+    {
+     "type": "text",
+     "text": "Hoằng Tháo đuổi theo",
+     "style": "hand",
+     "size": 52,
+     "color": "han",
+     "x": 1480,
+     "y": 200,
+     "at": 0.45
+    }
+   ],
+   "camera": {
+    "keys": [
+     [
+      0,
+      1.08,
+      760,
+      600
+     ],
+     [
+      1,
+      1.08,
+      1160,
+      600
+     ]
+    ]
+   },
+   "sfx": [
+    [
+     0.3,
+     "drum",
+     0.45
+    ]
+   ]
+  },
+  {
+   "id": "s16",
+   "label": "Phản công",
+   "text": "Đợi đến khi nước triều bắt đầu rút, Ngô Quyền hạ lệnh tổng phản công. Quân mai phục hai bên bờ đổ ra, thuyền quân ta từ thượng nguồn ào ạt đánh xuống. Quân Nam Hán hoảng loạn, quay đầu tháo chạy ra biển.",
+   "sfx": [
+    [
+     0.18,
+     "drum",
+     0.6
+    ]
+   ],
+   "items": [
+    {
+     "type": "hills",
+     "y": 640,
+     "h": 130,
+     "seed": 9
+    },
+    {
+     "type": "stakes",
+     "x1": 900,
+     "x2": 1600,
+     "n": 14,
+     "base": 1010,
+     "h": 240
+    },
+    {
+     "type": "boat",
+     "variant": "han",
+     "scale": 0.72,
+     "facing": -1,
+     "faces": [
+      [
+       0.62,
+       1
+      ]
+     ],
+     "stuckPose": "panic",
+     "path": [
+      [
+       0,
+       700,
+       0
+      ],
+      [
+       0.62,
+       640,
+       0
+      ],
+      [
+       1,
+       1000,
+       0
+      ]
+     ],
+     "crewPose": "panic"
+    },
+    {
+     "type": "boat",
+     "variant": "han",
+     "scale": 0.62,
+     "facing": -1,
+     "faces": [
+      [
+       0.66,
+       1
+      ]
+     ],
+     "path": [
+      [
+       0,
+       1150,
+       0
+      ],
+      [
+       0.66,
+       1120,
+       0
+      ],
+      [
+       1,
+       1500,
+       0
+      ]
+     ],
+     "phase": 40,
+     "crewPose": "panic"
+    },
+    {
+     "type": "boat",
+     "variant": "viet",
+     "scale": 0.65,
+     "facing": 1,
+     "crew": 3,
+     "at": 0.3,
+     "path": [
+      [
+       0.3,
+       -300,
+       0
+      ],
+      [
+       1,
+       380,
+       0
+      ]
+     ]
+    },
+    {
+     "type": "boat",
+     "variant": "viet",
+     "scale": 0.58,
+     "facing": 1,
+     "crew": 3,
+     "at": 0.35,
+     "path": [
+      [
+       0.35,
+       -450,
+       0
+      ],
+      [
+       1,
+       150,
+       0
+      ]
+     ],
+     "phase": 20
+    },
+    {
+     "type": "water",
+     "level": [
+      [
+       0,
+       640
+      ],
+      [
+       0.55,
+       640
+      ],
+      [
+       1,
+       690
+      ]
+     ]
+    },
+    {
+     "type": "volley",
+     "x1": 150,
+     "y1": 300,
+     "x2": 850,
+     "y2": 580,
+     "n": 10,
+     "waves": 4,
+     "gap": 35,
+     "at": 0.3
+    },
+    {
+     "type": "text",
+     "text": "PHẢN CÔNG!",
+     "style": "stamp",
+     "size": 70,
+     "w": 480,
+     "x": 960,
+     "y": 200,
+     "at": 0.18
+    }
+   ],
+   "sky": "storm"
+  },
+  {
+   "id": "s17",
+   "label": "Mắc cọc",
+   "text": "Nhưng nước đã rút xuống. Những chiến thuyền lớn nặng nề lao thẳng vào bãi cọc. Mũi cọc sắt đâm thủng mạn thuyền, thuyền vỡ, thuyền chìm, quân lính rơi xuống nước. Quân Nam Hán chết đuối quá nửa. Chính Hoằng Tháo cũng bị giết ngay trong trận.",
+   "shake": [
+    [
+     0.2,
+     14
+    ],
+    [
+     0.24,
+     14
+    ],
+    [
+     0.27,
+     12
+    ]
+   ],
+   "sfx": [
+    [
+     0.2,
+     "crack",
+     0.7
+    ],
+    [
+     0.24,
+     "crack",
+     0.6
+    ],
+    [
+     0.27,
+     "crack",
+     0.6
+    ],
+    [
+     0.05,
+     "drum",
+     0.45
+    ]
+   ],
+   "items": [
+    {
+     "type": "hills",
+     "y": 640,
+     "h": 130,
+     "seed": 9
+    },
+    {
+     "type": "stakes",
+     "x1": 780,
+     "x2": 1520,
+     "n": 16,
+     "base": 1010,
+     "h": 250
+    },
+    {
+     "type": "boat",
+     "variant": "han",
+     "scale": 0.72,
+     "facing": 1,
+     "path": [
+      [
+       0,
+       420,
+       0
+      ],
+      [
+       0.2,
+       960,
+       0
+      ]
+     ],
+     "stuck": 0.2,
+     "tilt": 12,
+     "sink": 0.5
+    },
+    {
+     "type": "boat",
+     "variant": "han",
+     "scale": 0.62,
+     "facing": 1,
+     "path": [
+      [
+       0,
+       100,
+       0
+      ],
+      [
+       0.24,
+       720,
+       0
+      ]
+     ],
+     "stuck": 0.24,
+     "tilt": -9,
+     "sink": 0.6,
+     "phase": 30
+    },
+    {
+     "type": "boat",
+     "variant": "han",
+     "scale": 0.66,
+     "facing": 1,
+     "path": [
+      [
+       0,
+       760,
+       0
+      ],
+      [
+       0.27,
+       1330,
+       0
+      ]
+     ],
+     "stuck": 0.27,
+     "tilt": 16,
+     "sink": 0.55,
+     "phase": 60
+    },
+    {
+     "type": "fire",
+     "x": 1300,
+     "y": 690,
+     "scale": 0.9,
+     "at": 0.4
+    },
+    {
+     "type": "smoke",
+     "x": 960,
+     "y": 700,
+     "scale": 0.8,
+     "at": 0.5,
+     "drift": 90
+    },
+    {
+     "type": "smoke",
+     "x": 1310,
+     "y": 640,
+     "scale": 1.1,
+     "at": 0.35
+    },
+    {
+     "type": "water",
+     "level": [
+      [
+       0,
+       690
+      ],
+      [
+       0.22,
+       800
+      ],
+      [
+       0.45,
+       880
+      ],
+      [
+       1,
+       900
+      ]
+     ]
+    },
+    {
+     "type": "splash",
+     "x": 960,
+     "y": 800,
+     "at": 0.2
+    },
+    {
+     "type": "splash",
+     "x": 720,
+     "y": 810,
+     "at": 0.24
+    },
+    {
+     "type": "splash",
+     "x": 1330,
+     "y": 820,
+     "at": 0.27
+    },
+    {
+     "type": "stick",
+     "team": "han",
+     "x": 1080,
+     "y": 930,
+     "pose": "swim",
+     "scale": 0.78,
+     "at": 0.45
+    },
+    {
+     "type": "stick",
+     "team": "han",
+     "x": 1480,
+     "y": 935,
+     "pose": "swim",
+     "facing": -1,
+     "scale": 0.78,
+     "at": 0.5
+    },
+    {
+     "type": "volley",
+     "x1": 100,
+     "y1": 250,
+     "x2": 1000,
+     "y2": 700,
+     "n": 12,
+     "waves": 5,
+     "gap": 40,
+     "at": 0.08
+    },
+    {
+     "type": "text",
+     "text": "Hoằng Tháo tử trận",
+     "style": "stamp",
+     "size": 64,
+     "w": 600,
+     "x": 960,
+     "y": 200,
+     "at": 0.82
+    }
+   ],
+   "sky": "dusk",
+   "camera": {
+    "keys": [
+     [
+      0,
+      1,
+      960,
+      540
+     ],
+     [
+      0.22,
+      1.25,
+      1000,
+      700
+     ],
+     [
+      0.6,
+      1.15,
+      1000,
+      650
+     ],
+     [
+      1,
+      1.0,
+      960,
+      560
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s18",
+   "label": "Lưu Cung khóc",
+   "tint": "#8090a8",
+   "text": "Tin bại trận truyền về Hải Môn. Vua Nam Hán Lưu Cung nghe tin con chết, quân tan, chỉ biết thương khóc, rồi thu nhặt tàn quân rút về nước. Giấc mộng chiếm lại Giao Châu tan thành mây khói.",
+   "items": [
+    {
+     "type": "tent",
+     "x": 1300,
+     "y": 860,
+     "scale": 1.15,
+     "color": "#2f4a6d"
+    },
+    {
+     "type": "ground",
+     "y": 860
+    },
+    {
+     "type": "stick",
+     "team": "han",
+     "hat": "hanking",
+     "x": 1300,
+     "y": 860,
+     "facing": -1,
+     "scale": 1.495,
+     "pose": "stand",
+     "poses": [
+      [
+       0.32,
+       "cry"
+      ]
+     ],
+     "label": "Lưu Cung",
+     "labelOut": 0.3
+    },
+    {
+     "type": "stick",
+     "team": "han",
+     "hat": "han",
+     "scale": 1.235,
+     "path": [
+      [
+       0,
+       -100,
+       860
+      ],
+      [
+       0.2,
+       900,
+       860
+      ]
+     ],
+     "pose": "run",
+     "poses": [
+      [
+       0.2,
+       "kneel"
+      ]
+     ]
+    },
+    {
+     "type": "bubble",
+     "text": "Thái tử... tử trận rồi!",
+     "x": 760,
+     "y": 470,
+     "at": 0.2,
+     "out": 0.5,
+     "tail": [
+      60,
+      150
+     ]
+    },
+    {
+     "type": "text",
+     "text": "Rút quân về nước",
+     "style": "hand",
+     "size": 56,
+     "x": 700,
+     "y": 300,
+     "at": 0.62
+    }
+   ],
+   "sky": "storm"
+  },
+  {
+   "id": "s19",
+   "label": "Xưng vương",
+   "chapter": "VI · ĐỘC LẬP",
+   "text": "Mùa xuân năm chín trăm ba mươi chín, Ngô Quyền xưng vương, chọn Cổ Loa, kinh đô xưa của An Dương Vương, làm nơi đóng đô. Ông đặt quan chức, định triều nghi, dựng nên một nhà nước độc lập. Hơn một nghìn năm Bắc thuộc chính thức khép lại.",
+   "sfx": [
+    [
+     0.05,
+     "drum",
+     0.45
+    ]
+   ],
+   "items": [
+    {
+     "type": "sun",
+     "x": 1680,
+     "y": 180,
+     "r": 60
+    },
+    {
+     "type": "palace",
+     "x": 960,
+     "y": 860,
+     "scale": 1.0,
+     "sign": "CỔ LOA"
+    },
+    {
+     "type": "ground",
+     "y": 880
+    },
+    {
+     "type": "text",
+     "text": "939",
+     "style": "stamp",
+     "size": 80,
+     "w": 240,
+     "x": 250,
+     "y": 250,
+     "at": 0.03
+    },
+    {
+     "type": "stick",
+     "x": 720,
+     "y": 900,
+     "hat": "king",
+     "weapon": "sword",
+     "scale": 1.56,
+     "pose": "stand",
+     "poses": [
+      [
+       0.1,
+       "raise"
+      ]
+     ],
+     "label": "Ngô Vương"
+    },
+    {
+     "type": "crowd",
+     "n": 8,
+     "cols": 4,
+     "x": 100,
+     "y": 900,
+     "dx": 125,
+     "dy": -45,
+     "hat": "band",
+     "weapons": [
+      "flag",
+      "spear"
+     ],
+     "pose": "cheer",
+     "scale": 0.975,
+     "at": 0.15
+    },
+    {
+     "type": "crowd",
+     "n": 8,
+     "cols": 4,
+     "x": 1480,
+     "y": 900,
+     "dx": 125,
+     "dy": -45,
+     "facing": -1,
+     "hat": "conical",
+     "weapons": [
+      "flag",
+      "none"
+     ],
+     "pose": "cheer",
+     "scale": 0.975,
+     "at": 0.2
+    },
+    {
+     "type": "text",
+     "text": "ĐỘC LẬP",
+     "style": "title",
+     "size": 110,
+     "color": "red",
+     "x": 960,
+     "y": 200,
+     "at": 0.8
+    }
+   ],
+   "sky": "dawn",
+   "transition": "scroll"
+  },
+  {
+   "id": "s20",
+   "label": "Bài học",
+   "text": "Kế cọc gỗ trên sông Bạch Đằng còn trở thành bài học lớn cho hậu thế. Năm chín trăm tám mươi mốt, Lê Hoàn lại đánh bại quân Tống trên dòng sông này. Năm một nghìn hai trăm tám mươi tám, Trần Hưng Đạo cũng dùng bãi cọc Bạch Đằng, nhấn chìm đoàn thuyền Nguyên Mông.",
+   "items": [
+    {
+     "type": "text",
+     "text": "Một dòng sông · ba lần chiến thắng",
+     "style": "title",
+     "size": 70,
+     "color": "red",
+     "x": 960,
+     "y": 160,
+     "at": 0.02
+    },
+    {
+     "type": "timeline",
+     "y": 420,
+     "x1": 160,
+     "x2": 1760,
+     "at": 0.05,
+     "marks": [
+      {
+       "x": 400,
+       "year": "938",
+       "label": "Ngô Quyền\nthắng Nam Hán",
+       "color": "red",
+       "at": 0.08
+      },
+      {
+       "x": 960,
+       "year": "981",
+       "label": "Lê Hoàn\nthắng quân Tống",
+       "at": 0.38
+      },
+      {
+       "x": 1520,
+       "year": "1288",
+       "label": "Trần Hưng Đạo\nthắng Nguyên Mông",
+       "at": 0.66
+      }
+     ]
+    },
+    {
+     "type": "stakes",
+     "x1": 320,
+     "x2": 480,
+     "n": 5,
+     "base": 880,
+     "h": 150,
+     "at": 0.12,
+     "span": 0.08
+    },
+    {
+     "type": "stakes",
+     "x1": 880,
+     "x2": 1040,
+     "n": 5,
+     "base": 880,
+     "h": 150,
+     "at": 0.42,
+     "span": 0.08
+    },
+    {
+     "type": "stakes",
+     "x1": 1440,
+     "x2": 1600,
+     "n": 5,
+     "base": 880,
+     "h": 150,
+     "at": 0.7,
+     "span": 0.08
+    }
+   ]
+  },
+  {
+   "id": "s21",
+   "label": "Theo dõi",
+   "kind": "outro",
+   "text": "Một dòng sông, ba lần làm nên lịch sử. Nếu thấy câu chuyện hay, hãy theo dõi kênh {channel} để nghe thêm nhiều câu chuyện lịch sử nữa nhé.",
+   "items": [],
+   "transition": "fade",
+   "sky": "dawn"
+  }
+ ]
+}
